@@ -5,7 +5,7 @@ void PushValue(int val);
 void PushValue(float val);
 void PushValue(script_string_s val);
 void PushValue(float* val);
-void PushValue(void* entval);
+void PushValue(short entNum);
 extern int paramCount;
 
 union VariableUnion
@@ -22,14 +22,37 @@ union VariableUnion
 };
 enum VariableType
 {
-	VAR_UNDEFINED = 0,
-	VAR_OBJECT = 1,
-	VAR_STRING = 2,
-	VAR_ISTRING = 3,
-	VAR_VECTOR = 4,
-	VAR_FLOAT = 5,
-	VAR_INT = 6,
-	VAR_ANIM = 0xD
+  VAR_UNDEFINED = 0x0,
+  VAR_BEGIN_REF = 0x1,
+  VAR_POINTER = 0x1,
+  VAR_STRING = 0x2,
+  VAR_ISTRING = 0x3,
+  VAR_VECTOR = 0x4,
+  VAR_END_REF = 0x5,
+  VAR_FLOAT = 0x5,
+  VAR_INTEGER = 0x6,
+  VAR_CODEPOS = 0x7,
+  VAR_PRECODEPOS = 0x8,
+  VAR_FUNCTION = 0x9,
+  VAR_BUILTIN_FUNCTION = 0xA,
+  VAR_BUILTIN_METHOD = 0xB,
+  VAR_STACK = 0xC,
+  VAR_ANIMATION = 0xD,
+  VAR_PRE_ANIMATION = 0xE,
+  VAR_THREAD = 0xF,
+  VAR_NOTIFY_THREAD = 0x10,
+  VAR_TIME_THREAD = 0x11,
+  VAR_CHILD_THREAD = 0x12,
+  VAR_OBJECT = 0x13,
+  VAR_DEAD_ENTITY = 0x14,
+  VAR_ENTITY = 0x15,
+  VAR_ARRAY = 0x16,
+  VAR_DEAD_THREAD = 0x17,
+  VAR_COUNT = 0x18,
+  VAR_FREE = 0x18,
+  VAR_THREAD_LIST = 0x19,
+  VAR_ENDON_LIST = 0x1A,
+  VAR_TOTAL_COUNT = 0x1B
 };
 struct VariableValue
 {
@@ -42,6 +65,7 @@ typedef void (*script_method_t)(int scr_entref);
 typedef float* (*Scr_AllocVector_t)(float* v);
 typedef short (*SL_GetStringOfSize_t)(const char* value,unsigned int user, unsigned int len, int type);
 typedef const char* (*SL_ConvertToString_t)(short val);
+typedef int (*Scr_GetEntityId_t)(int entnum, unsigned int classnum);
 typedef struct gsc_notify
 {
 	gsc_notify()
