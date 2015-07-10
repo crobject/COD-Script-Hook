@@ -1,0 +1,46 @@
+GScr_LoadScripts(void)
+	zeros out variables, see (Scr_BeginLoadScripts)
+
+	loads a script file
+	checks to get a function handle ('label')
+	(this process is done with three different hard coded scrip files)
+
+	loads cetrain scripts related to the current game type see (GScr_LoadGameTypeScript)
+		ids are hard coded
+		each handle is saved into a variable in memory
+		based on the functions that use these scripts, we can assume what they do (ie. script '1467' handle '1DE0' is the script for play connections)
+
+	next the main script for the map is loaded (ie. airport.gsc)
+	g_scr_data variable is set to the handle at ('0x4FDD') of the script
+		g_scr_data is the first script executed by Scr_LoadLevel
+	next some bot shit is done
+	next, GScr_PostLoadScripts is called
+		a class map is set up for 6 classes presumably (entity, hud, vehicle, node, pathnode radient)
+		now, all the class fields are added to each class map
+	next, Scr_EndLoadScripts is called which stops scripts from loading
+
+Scr_LoadScript(const char *filename)
+	gets prechached entities
+	calls Scr_LoadScriptInternal, passing 0 prechached entities
+		attempts to find the script in the loaded scripts using FindVariable
+			if it finds it, it will return the object?
+			else 
+				it creates a new entry in scrCompilePub
+				it will store the hash of the name in scrCompilePub
+				now it will call ScriptCompile(unsigned int filePosId, unsigned int fileCountId, unsigned int scriptId, PrecacheEntry *entries, int entriesCount, scr_string_t name)
+		returns the 'script pos'
+
+
+Scr_ExecThread(handle, param_count)
+	set the start time as the current time
+	adds a ref to the current object (passed from a constant value)
+	allocates a thread for the object
+	executes the thread with vm_execute
+	removes stack variable
+	decrements variable count
+
+VM_Execute(unsigned int localId, const char *pos, unsigned int paramcount)
+	remove items from the stack based on the stack item count
+	re-aligns the stack to the original position
+	calls vm_execute_0(op_code processing)
+	does stack shit...

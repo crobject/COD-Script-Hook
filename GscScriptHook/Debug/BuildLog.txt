@@ -1,0 +1,18 @@
+﻿Build started 7/8/2015 11:57:07 PM.
+     1>Project "C:\Users\Admin\Documents\GitHub\AW-Menu\GscScriptHook\GscScriptHook\GscScriptHook.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\GscScriptHook.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         C:\Program Files (x86)\Microsoft Xbox 360 SDK\bin\win32\Lib.exe /OUT:"C:\Users\Admin\Documents\GitHub\AW-Menu\GscScriptHook\GscScriptHook\Debug\GscScriptHook.lib" /NOLOGO Debug\Hooks.obj
+         Debug\script.obj
+         GscScriptHook.vcxproj -> C:\Users\Admin\Documents\GitHub\AW-Menu\GscScriptHook\GscScriptHook\Debug\GscScriptHook.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\GscScriptHook.unsuccessfulbuild".
+         Touching "Debug\GscScriptHook.lastbuildstate".
+     1>Done Building Project "C:\Users\Admin\Documents\GitHub\AW-Menu\GscScriptHook\GscScriptHook\GscScriptHook.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.15
