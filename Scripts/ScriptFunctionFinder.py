@@ -141,13 +141,16 @@ function_data = list(function_data)
 function_data = sorted(function_data, key=lambda x: x[0].split(' ')[1])
 for f in function_data:
     fmt_fn = f[0] + '{'
-   	#the params need to be in decending order!
+    #the params need to be in decending order!
     for p in f[0].split(','):
-        fmt_fn += 'PushValue({0});'.format(p.split(' ')[2].strip(')'))
-        if fmt_fn.split(' ')[0] != 'void':
-            void_fn = 'return '
-        else:
-            void_fn = ''
+        try:
+            fmt_fn += 'PushValue({0});'.format(p.split(' ')[2].strip(')'))
+            if fmt_fn.split(' ')[0] != 'void':
+                void_fn = 'return '
+            else:
+                void_fn = ''
+        except Exception as e:
+            pass
     fmt_fn += '{0}callScriptFunction<{1}>({2}, entref);}}'.format(void_fn, fmt_fn.split(' ')[0], f[1])
 
     print(fmt_fn)
