@@ -237,6 +237,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hooks.h" />
+    <ClInclude Include="Script Functions.h" />
     <ClInclude Include="script.h" />
     <ClInclude Include="types.h" />
   </ItemGroup>

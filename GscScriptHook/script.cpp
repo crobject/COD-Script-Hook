@@ -1,20 +1,44 @@
 #include "script.h"
 #include "Hooks.h"
 #include <algorithm>
-
 int paramCount = 0;
 std::vector<gsc_thread_t> functions_threads;
 void (*function_initializaton_function)();
+#ifdef AW
+//TU11
 SL_GetStringOfSize_t SL_GetStringOfSize = (SL_GetStringOfSize_t)0x824872A8;
 SL_ConvertToString_t SL_ConvertToString = (SL_ConvertToString_t)0x824869F8;
 Scr_AllocVector_t Scr_AllocVector = (Scr_AllocVector_t)0x82483AA0;
 Scr_Add_t Scr_Add = (Scr_Add_t)0x82478548;
-Scr_GetEntityId_t Scr_GetEntityId = (Scr_GetEntityId_t)NULL;
+Scr_GetEntityId_t Scr_GetEntityId = (Scr_GetEntityId_t)0x82483450;
 script_function_t* g_scr_func_table = (script_function_t*)0x83B79B10;
 script_method_t* g_scr_meth_table = (script_method_t*)0x83B7B0A8;
-
-VariableValue** stackTop = (VariableValue**)0x83EEBA74;
+VariableValue** stackTop = (VariableValue**)0x83EEBA70;
 int * cParam = (int*)0x83EEBA78;
+#define VM_EXECUTE_ADDRESS 0x8247AC28
+#define VM_NOTIFY_ADDRESS 0x8247A4B0
+#define G_INITGAME_ADDRESS 0x82545040
+
+#elif defined(GHOST)
+//TU16
+SL_GetStringOfSize_t SL_GetStringOfSize = (SL_GetStringOfSize_t)0x82493100;
+SL_ConvertToString_t SL_ConvertToString = (SL_ConvertToString_t)0x82492318;
+Scr_AllocVector_t Scr_AllocVector = (Scr_AllocVector_t)0x82494C60;
+Scr_Add_t Scr_Add = (Scr_Add_t)0x8249BE20;
+Scr_GetEntityId_t Scr_GetEntityId = (Scr_GetEntityId_t)0x824988A0;
+script_function_t* g_scr_func_table = (script_function_t*)0x83658350;
+script_method_t* g_scr_meth_table = (script_method_t*)0x83659410;
+VariableValue** stackTop = (VariableValue**)0x839A9038;
+int * cParam = (int*)0x839A903C;
+
+#define VM_EXECUTE_ADDRESS 0x8249D6E8
+#define VM_NOTIFY_ADDRESS 0x8249B538
+#define G_INITGAME_ADDRESS 0x823F44A0
+
+#elif defined(MW3)
+
+#endif
+
 //script string overloads
 script_string_s::script_string_s(const char* str)
 {
@@ -54,7 +78,14 @@ void PushValue(short val)
 	paramCount++;
 	VariableValue* stack = Scr_Add();
 	stack->type = VAR_POINTER;
-	stack->u.intValue = Scr_GetEntityId(val);	
+	stack->u.intValue = Scr_GetEntityId(val, 0);	
+}
+void PushValue(script_string_s val)
+{
+	paramCount++;
+	VariableValue* stack = Scr_Add();
+	stack->type = VAR_STRING;
+	stack->u.intValue = val.s;
 }
 void spawnThread(gsc_thread_t thread)
 {
@@ -124,7 +155,7 @@ void VM_Notify_hook(unsigned int notifyListOwnerId, script_string_s stringValue,
 	{
 		for (auto j = i->endonList.begin(); j != i->endonList.end(); ++j)
 		{
-			if ( (*j).s == stringValue.s)
+			if ( (*j) == stringValue)
 			{
 				j = i->endonList.erase(j);
 			}
@@ -144,13 +175,12 @@ void G_InitGame_hook(int levelTime, unsigned int randomSeed, int restart, int re
 	G_InitGame_stub(levelTime, randomSeed, restart, registerDvars, savegame);
 	function_initializaton_function();
 }
-void initAW()
+void initGameHooks()
 {
-	hookFunctionStart((PDWORD)0x8247AC28,(PDWORD)VM_Execute_stub,(DWORD)VM_Execute_hook);
-	hookFunctionStart((PDWORD)NULL,	(PDWORD)VM_Notify_stub,(DWORD)VM_Notify_hook);
-	hookFunctionStart((PDWORD)NULL,(PDWORD)G_InitGame_stub,(DWORD)G_InitGame_hook);
+	hookFunctionStart((PDWORD)VM_EXECUTE_ADDRESS,(PDWORD)VM_Execute_stub,(DWORD)VM_Execute_hook);
+	hookFunctionStart((PDWORD)VM_NOTIFY_ADDRESS, (PDWORD)VM_Notify_stub,(DWORD)VM_Notify_hook);
+	hookFunctionStart((PDWORD)G_INITGAME_ADDRESS,(PDWORD)G_InitGame_stub,(DWORD)G_InitGame_hook);
 }
-
 //use this function to intialize the function that will be called with the game starts
 //use that function to initalize script threads 
 void initGame(void (*start_function)())

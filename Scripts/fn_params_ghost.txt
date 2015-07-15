@@ -1,1168 +1,679 @@
-void ScrCmd_attach()
-void ScrCmd_attachShieldModel()
-void ScrCmd_detach()
-void ScrCmd_detachShieldModel()
-void ScrCmd_moveShieldModel(char* p0, char* p1, char* p2)
-void ScrCmd_detachAll()
-int ScrCmd_GetAttachSize()
-conststring ScrCmd_GetAttachModelName(int p0)
-conststring ScrCmd_GetAttachTagName(int p0)
-void ScrCmd_GetAttachIgnoreCollision(int p0)
-void ScrCmd_hidepart(char* p0, char* p1)
-void ScrCmd_hidepartAllInstances(char* p0, char* p1)
-void ScrCmd_hideallparts()
-void ScrCmd_showpart(char* p0, char* p1)
-void ScrCmd_showallparts()
-void ScrCmd_LinkTo(Entity p0, char* p1, float* p2, float* p3)
-void ScrCmd_LinkToBlendToTag()
-void ScrCmd_Unlink()
-void ScrCmd_IsLinked()
-void ScrCmd_GetLinkedParent()
-void ScrCmd_GetLinkedChildren(int p0)
-void ScrCmd_GetMovingPlatformParent()
-void ScrCmd_AutoboltMissileEffects(int p0)
-void ScrCmd_EnableLinkTo()
-void ScrCmd_PlayerLinkTo(Entity p0, Entity p1, char* p1, int p7, int p7, int p7, float p2, float p3, float p4, float p5, float p6)
-void ScrCmd_PlayerLinkToDelta()
-void ScrCmd_PlayerLinkWeaponViewToDelta()
-void ScrCmd_PlayerLinkToAbsolute(Entity p0, Entity p1, char* p1)
-void ScrCmd_PlayerLinkToBlend(Entity p1, char* p1, float p2, float p3, float p4)
-void ScrCmd_PlayerLinkedOffsetEnable()
-void ScrCmd_PlayerLinkedOffsetDisable()
-void ScrCmd_PlayerLinkedSetViewZnear(int p0)
-void ScrCmd_PlayerLinkedSetUseBaseAngleForViewClamp(int p0)
-void ScrCmd_LerpViewAngleClamp(float p0, float p1, float p2, float p3, float p4, float p5, float p6)
-void everyVisitCallback()
-void ScrCmd_GetEye()
-void ScrCmd_GetViewOrigin()
-int ScrCmd_IsTouching()
-void ScrCmd_GetIsTouchingEntities(Object p0)
-void ScrCmd_StopLoopSound()
-void ScrCmd_StopSounds()
-void ScrCmd_PlayRumbleOnEntity(char* p0)
-void ScrCmd_PlayRumbleLoopOnEntity()
-void ScrCmd_StopRumble(char* p0)
-void ScrCmd_Delete()
-void ScrCmd_SetModel(char* p0)
-void ScrCmd_LaserOn()
-void ScrCmd_LaserOff()
-void ScrCmd_LaserAltViewOn()
-void ScrCmd_LaserAltViewOff()
-void ScrCmd_ThermalVisionOn(int p0)
-void ScrCmd_ThermalVisionOnShadowOff()
-void ScrCmd_ThermalVisionOff()
-void ScrCmd_ThermalDrawEnable()
-void ScrCmd_ThermalDrawDisable()
-void ScrCmd_ThermalVisionFOFOverlayOn()
-void ScrCmd_ThermalVisionFOFOverlayOff()
-void ScrCmd_AutoSpotOverlayOn()
-void ScrCmd_AutoSpotOverlayOff()
-void ScrCmd_SetEyesOnUplinkEnabled(int p0)
-void ScrCmd_SetContents(int p0)
-void ScrCmd_MakeUsable()
-void ScrCmd_MakeUnusable()
-void GScr_SetCursorHint(char* p0)
-void GScr_SetHintString(Entity p0, char* p0)
-void ScrCmd_ForceUseHintOn(char* p0)
-void ScrCmd_ForceUseHintOff()
-void ScrCmd_MakeSoft()
-void ScrCmd_MakeHard()
-void ScrCmd_EntityWillNeverChange()
-void GScr_StartFiring()
-void GScr_StopFiring()
-void GScr_IsFiringTurret()
-void GScr_StartBarrelSpin()
-void GScr_StopBarrelSpin()
-float GScr_GetBarrelSpinRate()
-void GScr_RemoteControlTurret()
-void GScr_RemoteControlTurretOff()
-void GScr_ShootTurret()
-void GScr_GetTurretOwner()
-void GScr_SetSentryOwner(Entity p0)
-void GScr_SetSentryCarrier(Entity p0)
-void GScr_SetTurretMinimapVisible(char* p1, int p0)
-void GScr_SetTargetEntity(float* p1)
-void GScr_SnapToTargetEntity(float* p1)
-void GScr_ClearTargetEntity()
-void GScr_GetTurretTarget(int p0)
-void GScr_SetPlayerSpread(float p0)
-void PlayerCmd_EnableMouseSteer()
-void j_Scr_ErrorInternal_0()
-void GScr_SetConvergenceTime(char* p1, float p0)
-void GScr_SetConvergenceHeightPercent(float p0)
-void GScr_SetTurretTeam()
-void GScr_MakeTurretSolid()
-void GScr_MakeTurretOperable()
-void GScr_MakeTurretInoperable()
-void nullsub_105()
-void GScr_SetRightArc(float p0)
-void GScr_SetLeftArc(float p0)
-void GScr_SetTopArc(float p0)
-void GScr_SetBottomArc(float p0)
-void GScr_SetAutoRotationDelay(float p0)
-void GScr_SetDefaultDropPitch(float p0)
-void GScr_RestoreDefaultDropPitch()
-void GScr_TurretFireDisable()
-void GScr_TurretFireEnable()
-void GScr_TurretSetBarrelSpinEnabled(int p0)
-void GScr_SetTurretModeChangeWait(int p0)
-void ScrCmd_GetHighestNodeStance()
-void ScrCmd_DoesNodeAllowStance()
-void GScr_UseTriggerRequireLookAt()
-conststring ScrCmd_GetStance()
-void ScrCmd_SetStance()
-void ScrCmd_ItemWeaponSetAmmo(int p0, int p1, int p2, int p3)
-int GScr_GetAmmoCount(char* p0)
-vector GScr_GetTagOrigin(char* p0)
-void GScr_GetTagAngles(char* p0)
-void GScr_ShellShock(char* p0, float p1, int p2)
-void GScr_StunPlayer(float p0)
-void j_Scr_ErrorInternal_1()
-void j_Scr_ErrorInternal_2()
-void GScr_StopShellShock()
-void GScr_FadeOutShellShock()
-void GScr_SetDepthOfField(float p0, float p1, float p2, float p3, float p4, float p5)
-void GScr_SetViewModelDepthOfField(float p0, float p1)
-void j_Scr_ErrorInternal_3()
-void j_Scr_ErrorInternal_4()
-void j_Scr_ErrorInternal_5()
-void GScr_ViewKick(int p0, float* p1)
-void GScr_LocalToWorldCoords(float* p0)
-int GScr_GetEntityNumber()
-void GScr_GetEntityVelocity()
-void GScr_EnableGrenadeTouchDamage()
-void GScr_DisableGrenadeTouchDamage()
-void GScr_EnableAimAssist()
-void GScr_DisableAimAssist()
-void GScr_EntityRadiusDamage()
-void ScrCmd_DoDamage(float p0, float* p1)
-void GScr_Detonate(Entity p0)
-void GScr_DamageConeTrace(float* p0)
-void GScr_SightConeTrace()
-void GScr_MissileSetTargetEnt(float* p1)
-void GScr_MissileSetTargetPos(float* p0)
-void GScr_MissileClearTarget()
-void GScr_MissileSetFlightmodeDirect()
-void GScr_MissileSetFlightmodeTop()
-float GScr_GetLightIntensity()
-void GScr_SetLightIntensity(float p0)
-int GScr_IsRagdoll()
-void ScrCmd_SetMoveSpeedScale(float p0, float p0)
-void ScrCmd_SetGrenadeThrowScale(float p0, float p1)
-void ScrCmd_SetGrenadeCookScale(float p0)
-void GScr_CameraLinkTo(char* p1)
-void GScr_CameraUnlink()
-void GScr_ControlsLinkTo()
-void GScr_ControlsUnlink()
-void GScr_RideVehicle(float p1, float p2, float p3, float p4, int p5)
-void GScr_StopRidingVehicle()
-void GScr_DisableMissileBoosting()
-void GScr_EnableMissileBoosting()
-void GScr_SetMissileMinimapVisible(int p0)
-void GScr_MakeVehicleSolidCapsule(float p0, float p1, float p2)
-void GScr_MakeVehicleSolidSphere(float p0, float p1)
-void GScr_RemoteControlVehicle()
-void GScr_RemoteControlVehicleOff()
-void GScr_IsFiringVehicleTurret()
-void GScr_RemoteControlVehicleTarget()
-void GScr_RemoteControlVehicleTargetOff()
-void GScr_MakeVehicleNotCollideWithPlayers(int p0)
-void GScr_DriveVehicleAndControlTurret()
-void GScr_DriveVehicleAndControlTurretOff()
-void everyVisitCallback_0()
-void GScr_GetPlayerSetting(char* p0)
-void sub_8240FE50(char* p0)
-void sub_8240FFB0(char* p0, int p1, int p1, int p1, int p1, float p1, char* p1)
-void GScr_RemoteCameraSoundscapeOn()
-void GScr_RemoteCameraSoundscapeOff()
-void j_Scr_ErrorInternal_6()
-void j_Scr_ErrorInternal_7()
-void ScrCmd_WorldPointToScreenPos(float* p0, float p1)
-void ScrCmd_WorldPointInReticle_Circle(float* p0, float p1, float p2)
-void ScrCmd_WorldPointInReticle_Rect(float* p0, float p1, float p2, float p3)
-void ScrCmd_GetPointInBounds(float p0, float p1, float p2)
-void ScrCmd_TransferMarksToNewScriptModel()
-void GScrCmd_SetWaterSheeting(int p0, float p1)
-void GScrCmd_SetWeaponHudIconOverride()
-conststring GScrCmd_GetWeaponHudIconOverride()
-void GScr_SetEMPJammed(int p0)
-void Scr_PlayerSetExponentialFog()
-int GScr_IsItemUnlocked(char* p0)
-void GScr_GetPlayerData()
-void GScr_SetPlayerData()
-void GScr_GetRankedPlayerData()
-void GScr_SetRankedPlayerData()
-void GScr_GetPrivatePlayerData()
-void GScr_SetPrivatePlayerData()
-void GScr_GetCoopPlayerData()
-void GScr_SetCoopPlayerData()
-void GScr_GetCommonPlayerData()
-void GScr_SetCommonPlayerData()
-void GScr_GetCaCPlayerData(int p1)
-void ScrCmd_TrackerUpdate(int p1, char* p0)
-void GScr_DisconnectPaths()
-void GScr_ConnectPaths()
-void GScr_DisconnectNode()
-void GScr_ConnectNode()
-void GScr_SetAISightLineVisible(int p0)
-void ScrCmd_SetClothType(char* p0)
-void ScrCmd_SetSurfaceType(char* p0)
-void Scr_AIPhysicsTrace(float* p0, float* p1, Entity p2, Entity p2, Entity p3, Entity p3, float p2, float p3, int p4, int p5)
-void Scr_AIPhysicsTracePassed(float* p0, float* p1, float p2, float p3, int p4)
-void ScrCmd_DontInterpolate()
-void ScrCmd_SetScriptablePartState(int p2)
-void ScrCmd_SetScriptableDamageOwner()
-void GScr_StopSliding()
-void ScrCmd_HudOutlineEnableForClient(int p1, int p2)
-void ScrCmd_HudOutlineDisableForClient()
-void ScrCmd_HudOutlineEnableForClients(int p1, int p2)
-void ScrCmd_HudOutlineDisableForClients()
-void ScrCmd_HudOutlineEnable(int p0, int p1)
-void ScrCmd_HudOutlineDisable()
-void ScrCmd_MotionBlurHQEnable()
-void ScrCmd_MotionBlurHQDisable()
-void ScrCmd_MakeCollideWithItemClip(int p0)
-void GScr_SetCommonPlayerDataReservedInt(char* p0, int p1)
-void GScr_GetCommonPlayerDataReservedInt(char* p0)
-void GScr_GetRankedPlayerDataReservedInt(char* p0)
-void GScr_SetRankedPlayerDataReservedInt(char* p0, int p1)
-void GScr_GetCoopPlayerDataReservedInt(char* p0)
-void GScr_SetCoopPlayerDataReservedInt(char* p0, int p1)
-void GScr_PlayerChoke()
-void PlayerCmd_pingPlayer()
-void PlayerCmd_buttonPressedDEVONLY()
-void PlayerCmd_SayAll()
-void PlayerCmd_SayTeam()
-void PlayerCmd_setSpawnWeapon(char* p0)
-entity PlayerCmd_dropItem(char* p0)
-entity PlayerCmd_DropScavengerBag(char* p0)
-void PlayerCmd_finishPlayerDamage(int p2, Entity p0, Entity p1, int p3, char* p5, Entity p6, float* p6, Entity p7, float* p7, int p9, float p10)
-void PlayerCmd_Suicide()
-void PlayerCmd_CloseInGameMenu()
-void iclientprintln(char* p0)
-void iclientprintlnbold(char* p0)
-void PlayerCmd_spawn(float* p0, float* p1)
-void PlayerCmd_setEnterTime(int p0)
-void PlayerCmd_ClonePlayer(int p0)
-int PlayerCmd_IsTalking()
-void PlayerCmd_AllowSpectateTeam(int p1)
-string PlayerCmd_GetGuid()
-void PlayerCmd_GetXuid()
-void PlayerCmd_GetUcdIdLow()
-void PlayerCmd_GetUcdIdHigh()
-int PlayerCmd_GetClanIdHigh()
-int PlayerCmd_GetClanIdLow()
-int PlayerCmd_IsHost()
-void PlayerCmd_GetSpectatingPlayer()
-void PlayerCmd_PredictStreamPos(float* p0)
-void nullsub_111()
-void nullsub_112()
-void PlayerCmd_SetRank(int p0, int p1)
-void nullsub_113()
-void nullsub_114()
-void nullsub_115()
-void PlayerCmd_SetCardDisplaySlot(int p1)
-void PlayerCmd_KC_RegWeaponForFXRemoval(char* p0)
-void PlayerCmd_LastStandRevive()
-void PlayerCmd_SetSpectateDefaults(float* p0, float* p1)
-float PlayerCmd_GetThirdPersonCrosshairOffset()
-int PlayerCmd_IsSplitscreenPlayer()
-int PlayerCmd_IsSplitscreenPlayerPrimary()
-void PlayerCmd_RegisterParty(int p0)
-array PlayerCmd_GetFireteamMembers()
-void PlayerCmd_MarkForEyesOn(int p0)
-void PlayerCmd_IsSighted()
-array PlayerCmd_GetSightedPlayers()
-array PlayerCmd_GetPlayersSightingMe()
-void PlayerCmd_GetNearestNode()
-void PlayerCmd_GetCustomizationBody()
-void PlayerCmd_GetCustomizationHead()
-void PlayerCmd_GetCustomizationViewmodel()
-void PlayerCmd_LoadCustomizationPlayerView()
-void PlayerCmd_HasLoadedCustomizationPlayerView()
-void PlayerCmd_HasFemaleCustomizationModel()
-void PlayerCmd_SetMLGCameraDefaults(int p0, float* p1, float* p2)
-void PlayerCmd_IsMLGSpectator()
-void PlayerCmd_SetMLGSpectator(int p0)
-void PlayerCmd_GetMLGSpectatorTeam()
-int PlayerCmd_GetJoinType()
-void ScrCmd_GetOrigin()
-void ScrCmd_UseBy()
-void ScrCmd_PlaySoundAsMaster(char* p0)
-void sub_8241C408(char* p0)
-void ScrCmd_PlaySoundToTeam(char* p0)
-void ScrCmd_PlaySoundToPlayer(char* p0)
-void ScrCmd_PlaySoundOnMovingEnt(char* p0)
-void ScrCmd_PlayLoopSound(char* p0)
-float ScrCmd_GetNormalHealth()
-void ScrCmd_SetNormalHealth(float p0)
-void ScrCmd_SetOtherEnt(Entity p0)
-void ScrCmd_SetEntityOwner(Entity p0)
-void ScrCmd_Show()
-void ScrCmd_Hide()
-void ScrCmd_PlayerHide()
-void ScrCmd_ShowToPlayer()
-void ScrCmd_EnablePlayerUse()
-void ScrCmd_DisablePlayerUse()
-void ScrCmd_SetScriptMoverKillCam(char* p0)
-void ScrCmd_MakeScrambler()
-void ScrCmd_MakePortableRadar()
-void ScrCmd_ClearScrambler()
-void ScrCmd_ClearPortableRadar()
-void GScr_SetMode()
-conststring GScr_GetMode()
-void GScr_SetTeamForTrigger()
-void GScr_ClientClaimTrigger()
-void GScr_ClientReleaseTrigger()
-void GScr_ReleaseClaimedTrigger()
-void GScr_IsUsingOnlineDataOffline()
-int GScr_GetRestedTime()
-void sub_8241E198()
-void nullsub_149()
-void GScr_IsOnLadder()
-void GScr_StartRagdoll()
-void GScr_GetCorpseAnim()
-void GScr_SetCorpseFalling(int p0)
-void GScr_GetCorpseEntity()
-void ScrCmd_PlayerForceDeathAnim(char* p2, float* p4)
-void GScr_StartAC130()
-void GScr_StartAC130()
-void GScr_ForceThirdPersonWhenFollowing()
-void GScr_DisableForceThirdPersonWhenFollowing()
-void ScrCmd_SetClientOwner()
-void ScrCmd_PlayerSetGroundReferenceEnt(Entity p0, Entity p0)
-void ScrCmd_PlayerCommandBot(Entity p0)
-void Scr_MakeEntityNoMeleeTarget()
-void GScr_EmissiveBlend(float p0, float p1)
-void GScr_DisableMissileStick()
-void GScr_EnableMissileStick()
-void GScr_CanSpawnTestClient()
-void GScr_SpawnTestClient()
-void GScr_SetPlaneSplineId(int p1)
-void GScr_LogMatchDataLife(int p0, int p2, int p3, float* p1, char* p4, char* p6, char* p5, char* p7, char* p9, char* p8, char* p10, char* p11)
-void GScr_LogMatchDataDeath(int p0, int p1, Entity p2, Entity p2, int p3, char* p4, char* p5, int p6, int p7)
-void ScrCmd_QueueDialogForPlayer(char* p0, float p2, Entity p3, Entity p4, int p4, Entity p5, float* p5)
-void Scr_SetFXKillDefOnDelete()
-float GScr_GetClanWarsBonusForCurrentPlaylist()
-void GScr_AliensCheckIsItemPurchased(char* p0)
-void GScr_AliensSetHasCraftedItem(char* p0)
-void GScr_AliensCheckIsUpgradeEnabled(char* p0)
-void GScr_AliensCheckIsRelicEnabled(char* p0)
-conststring PlayerCmd_GetViewmodel()
-int PlayerCmd_fragButtonPressed()
-int PlayerCmd_secondaryOffhandButtonPressed()
-int PlayerCmd_getCurrentWeaponClipAmmo()
-void PlayerCmd_SetVelocity(float* p0)
-float PlayerCmd_getViewHeight()
-void j_Scr_ErrorInternal_8()
-void PlayerCmd_getNormalizedMovement()
-void PlayerCmd_getNormalizedCameraMovement()
-void PlayerCmd_giveWeapon(char* p0, int p1, int p2, int p3, int p4)
-void PlayerCmd_takeWeapon(char* p0)
-int PlayerCmd_GetHybridScopeState(char* p0)
-void PlayerCmd_SetHybridScopeState(char* p0, int p1)
-void PlayerCmd_takeAllWeapons()
-void PlayerCmd_getCurrentWeapon()
-void PlayerCmd_getCurrentPrimaryWeapon()
-void PlayerCmd_getCurrentOffhand()
-void PlayerCmd_hasWeapon(char* p0)
-void PlayerCmd_switchToWeapon()
-void PlayerCmd_switchToWeaponImmediate()
-void PlayerCmd_switchToOffhand(char* p0)
-void PlayerCmd_setWeaponModelVariant(char* p0, int p1)
-void PlayerCmd_giveStartAmmo(char* p0)
-void PlayerCmd_giveMaxAmmo(char* p0)
-float PlayerCmd_getFractionStartAmmo(char* p0)
-float PlayerCmd_getFractionMaxAmmo(char* p0)
-int PlayerCmd_isDualWielding()
-int PlayerCmd_isReloading()
-int PlayerCmd_isSwitchingWeapon()
-int PlayerCmd_isOffhandWeaponReadyToThrow()
-void PlayerCmd_setOrigin(float* p1, int p1)
-vector PlayerCmd_GetVelocity()
-void PlayerCmd_setAngles(float* p0)
-vector PlayerCmd_getAngles()
-int PlayerCmd_IsSprinting()
-int PlayerCmd_IsLeaning()
-int PlayerCmd_useButtonPressed()
-int PlayerCmd_attackButtonPressed()
-int PlayerCmd_adsButtonPressed()
-int PlayerCmd_meleeButtonPressed()
-int PlayerCmd_jumpButtonPressed()
-float PlayerCmd_playerADS()
-int PlayerCmd_isOnGround()
-int PlayerCmd_isUsingTurret()
-void PlayerCmd_SetViewmodel(char* p0)
-void PlayerCmd_setOffhandPrimaryClass()
-conststring PlayerCmd_getOffhandPrimaryClass()
-void PlayerCmd_setOffhandSecondaryClass()
-conststring PlayerCmd_getOffhandSecondaryClass()
-void PlayerCmd_BeginLocationSelection(char* p0, int p1, float p2)
-void PlayerCmd_EndLocationSelection()
-void PlayerCmd_DisableWeapons()
-void PlayerCmd_EnableWeapons()
-void PlayerCmd_DisableOffhandWeapons()
-void PlayerCmd_EnableOffhandWeapons()
-void PlayerCmd_DisableWeaponSwitch()
-void PlayerCmd_EnableWeaponSwitch()
-void PlayerCmd_OpenPopupMenu(char* p0)
-void PlayerCmd_OpenPopupMenuNoMouse(char* p0)
-void PlayerCmd_ClosePopupMenu()
-void PlayerCmd_OpenMenu(char* p0)
-void PlayerCmd_CloseMenu(char* p0)
-void PlayerCmd_FreezeControls(int p0, int p0)
-void PlayerCmd_DisableUsability()
-void PlayerCmd_EnableUsability()
-void PlayerCmd_SetWhizbySpreads(float p0, float p1, float p2)
-void PlayerCmd_SetWhizbyRadii(float p0, float p1, float p2)
-void nullsub_116()
-void nullsub_117()
-void PlayerCmd_SetVolMod(float p2, char* p0, float p1)
-void PlayerCmd_SetChannelVolume(float p2, char* p0, float p1)
-void PlayerCmd_SetChannelVolumes(float p2, char* p1)
-void PlayerCmd_DeactivateChannelVolumes(float p1)
-void ScrCmd_PlayLocalSound(char* p0)
-void ScrCmd_StopLocalSound(char* p0)
-void PlayerCmd_SetWeaponAmmoClip(char* p0, int p1)
-void PlayerCmd_SetWeaponAmmoStock(char* p0, int p1)
-int PlayerCmd_GetWeaponAmmoClip(char* p0)
-int PlayerCmd_GetWeaponAmmoStock(char* p0)
-int PlayerCmd_AnyAmmoForWeaponModes(char* p0)
-void PlayerCmd_SetClientOmnvar(char* p0, int p1, int p1, int p1, float p1, char* p1)
-void PlayerCmd_SetClientDvar(char* p0, Entity p1, char* p1, char* p1)
-void PlayerCmd_SetClientDvars(char* p0, char* p1)
-void PlayerCmd_SetClientSpawnSightTraces()
-float PlayerCmd_ClientSpawnSightTracePassed(int p0)
-void PlayerCmd_AllowADS(int p0)
-void PlayerCmd_AllowJump(int p0)
-void PlayerCmd_AllowSprint(int p0)
-void PlayerCmd_SetSpreadOverride(int p0)
-void PlayerCmd_ResetSpreadOverride()
-void PlayerCmd_SetAimSpreadMovementScale(float p0)
-void PlayerCmd_SetActionSlot(int p0, char* p1, char* p2)
-void PlayerCmd_SetViewKickScale(float p0)
-float PlayerCmd_GetViewKickScale()
-void PlayerCmd_GetWeaponsListAll()
-void PlayerCmd_GetWeaponsListPrimaries()
-void PlayerCmd_GetWeaponsListOffhands()
-void PlayerCmd_GetWeaponsListItems()
-void PlayerCmd_GetWeaponsListExclusives()
-void PlayerCmd_GetWeaponsList()
-void PlayerCmd_CanPlayerPlaceSentry(float p1, int p0)
-void PlayerCmd_CanPlayerPlaceTank(float p5, float p4, float p3, float p2, float p1, float p0)
-void Scr_VisionSetNakedForPlayer(float p1, char* p0)
-void Scr_VisionSetStage(int p0, float p1)
-void Scr_VisionSetNightForPlayer()
-void Scr_VisionSetMissileCamForPlayer()
-void Scr_VisionSetThermalForPlayer()
-void Scr_VisionSetPainForPlayer()
-void Scr_VisionSetPostApplyForPlayer()
-void Scr_SetBlurForPlayer(float p0, float p1)
-void Scr_GetPlayerWeaponModel()
-void sub_823E0A70()
-void GScr_notifyOnPlayerCommand(char* p0, char* p1)
-void PlayerCmd_CanMantle()
-void PlayerCmd_ForceMantle()
-void PlayerCmd_CancelMantle()
-void PlayerCmd_IsMantling()
-void PlayerCmd_PlayFX(int p0, float* p1, float* p2, float* p3)
-void PlayerCmd_PlayerRecoilScaleOn(int p0)
-void PlayerCmd_PlayerRecoilScaleOff()
-void PlayerCmd_WeaponLockStart(Entity p0, float* p0)
-void PlayerCmd_WeaponLockFinalize(Entity p0, float* p0, float* p1, float* p1, int p2)
-void PlayerCmd_WeaponLockFree()
-void PlayerCmd_WeaponLockTargetTooClose(int p0)
-void PlayerCmd_WeaponLockNoClearance(int p0)
-void PlayerCmd_DisableWeaponPickup()
-void PlayerCmd_EnableWeaponPickup()
-void PlayerCmd_DisableAutoReload()
-void PlayerCmd_EnableAutoReload()
-void PlayerCmd_IsMeleeing()
-void AI_GetEnemyInfo()
-void PlayerCmd_BotSetFlag(char* p0, int p1)
-void PlayerCmd_BotSetStance()
-void PlayerCmd_BotLookAtPoint(Entity p0, float* p0, float p1, char* p2)
-void PlayerCmd_BotSetScriptMove(float p0, float p1, Entity p2, float p2, Entity p3, int p3, Entity p4, int p4)
-void PlayerCmd_BotSetScriptGoal(float* p0, float p1, char* p0, Entity p3, float p3, Entity p4, float p4)
-void PlayerCmd_BotSetScriptGoalNode(char* p1, Entity p2, float p2, Entity p3, float p3)
-void PlayerCmd_BotClearScriptGoal()
-void PlayerCmd_BotSetScriptEnemy()
-void PlayerCmd_BotClearScriptEnemy()
-void PlayerCmd_BotSetPathingStyle(Entity p0, char* p0)
-void PlayerCmd_BotSetAttacker()
-void PlayerCmd_BotSetAwareness(float p0)
-void PlayerCmd_BotPressButton(char* p0, float p1)
-void PlayerCmd_BotClearButton(char* p0)
-void PlayerCmd_BotThrowGrenade(float* p0, char* p1)
-void PlayerCmd_BotHasScriptGoal()
-void PlayerCmd_BotGetScriptGoal()
-void PlayerCmd_BotGetScriptGoalNode()
-float PlayerCmd_BotGetScriptGoalRadius()
-float PlayerCmd_BotGetScriptGoalYaw()
-string PlayerCmd_BotGetScriptGoalType()
-void PlayerCmd_BotPursuingScriptGoal()
-void PlayerCmd_BotGetWorldSize()
-void PlayerCmd_BotGetWorldClosestEdge(Entity p0, float* p0)
-void PlayerCmd_BotNodeAvailable()
-entitynum PlayerCmd_BotFindNodeRandom()
-void PlayerCmd_BotMemoryEvent(char* p0, Entity p1, char* p1, Entity p2, float* p2, Entity p3, float* p3, Entity p4)
-void PlayerCmd_BotNodePick()
-void PlayerCmd_BotNodePickMultiple(int p2)
-void PlayerCmd_BotNodeScoreMultiple()
-string PlayerCmd_BotGetPersonality()
-void PlayerCmd_BotSetPersonality(char* p0)
-void PlayerCmd_BotSetDifficulty(char* p0)
-string PlayerCmd_BotGetDifficulty()
-void PlayerCmd_BotSetDifficultySetting(char* p0, float p1)
-float PlayerCmd_BotGetDifficultySetting(char* p0)
-void PlayerCmd_BotPredictSeePoint(float* p0)
-void PlayerCmd_BotCanSeeEntity()
-array PlayerCmd_BotGetNodesOnPath()
-float PlayerCmd_BotGetPathDist()
-float PlayerCmd_BotGetFovDot()
-void PlayerCmd_BotGetImperfectEnemyInfo(float* p1)
-void PlayerCmd_BotIsRandomized()
-void Scr_GetNodeNumber()
-int Scr_NodeIsDisconnected()
-void PlayerCmd_BotFirstAvailableGrenade(char* p0)
-void PlayerCmd_BotPredictEnemyCampSpots(int p0)
-void AgentCmd_SpawnAgent(float* p0, float* p1, char* p2, float p3, float p4, Entity p5)
-void AgentCmd_FinishAgentDamage(int p2, Entity p0, Entity p1, int p3, char* p5, Entity p6, float* p6, Entity p7, float* p7, int p9, float p10)
-void AgentCmd_SetAgentAttacker()
-void AgentCmd_CloneAgent(int p0)
-void AgentCmd_AgentCanSeeSentient()
-void AnimStateCmd_SetAnimClass(char* p0)
-void AnimStateCmd_EnableAnimState(int p0)
-void AnimStateCmd_SetAnimState(Entity p1, int p1, float p2)
-void AnimStateCmd_GetAnimEntry()
-void AnimStateCmd_GetAnimEntryName()
-void AnimStateCmd_GetAnimEntryAlias()
-void AnimStateCmd_GetAnimEntryCount()
-vector ScrAgentCmd_GetLookaheadDir()
-void ScrAgentCmd_GetPathGoalPos()
-void ScrAgentCmd_SetGoalPos(float* p0)
-void ScrAgentCmd_GetGoalPos()
-void ScrAgentCmd_SetGoalNode()
-void ScrAgentCmd_SetGoalEntity()
-void ScrAgentCmd_SetGoalRadius(float p0)
-void ScrAgentCmd_SetWaypoint(Entity p0, float* p0)
-void ScrAgentCmd_GetNegotiationStartNode()
-void ScrAgentCmd_GetNegotiationEndNode()
-void ScrAgentCmd_GetNegotiationNextNode()
-void ScrAgentCmd_SetAnimScale(float p0, float p1)
-void ScrAgentCmd_SetOrientMode(float* p1, float* p2)
-void ScrAgentCmd_SetAnimMode()
-void ScrAgentCmd_SetPhysicsMode()
-void ScrAgentCmd_SetClipMode()
-void ScrAgentCmd_BeginMelee()
-void ScrAgentCmd_SetMaxTurnSpeed(float p0)
-float ScrAgentCmd_GetMaxTurnSpeed()
-void ScrAgentCmd_SetScripted(int p0)
-void ScrAgentCmd_DoTrajectory(float* p0, float* p1, float p2)
-void ScrAgentCmd_DoAnimLerp(float* p0, float* p1, float p2)
-void ScrAgentCmd_DoAnimRelative(float* p1, float* p2)
-void ScrAgentCmd_SetViewHeight(int p0)
-void ScrAgentCmd_ClaimNode()
-void ScrAgentCmd_RelinquishClaimedNode()
-void ScrAgentCmd_UseModelCollisionBounds()
-void ScrAgentCmd_SetWallRunCost(float p0)
-void Scr_VisionSyncWithPlayer()
-void PlayerCmd_SetNameplateMaterial(Entity p0, char* p0, Entity p1, char* p1)
-void PlayerCmd_ShowHudSplash(char* p0, int p1, int p2)
-void PlayerCmd_SetPerk(char* p0, int p1, int p2)
-void PlayerCmd_HasPerk(char* p0, int p1)
-void PlayerCmd_ClearPerks()
-void PlayerCmd_UnsetPerk(char* p0, int p1)
-void nullsub_118()
-void nullsub_119()
-int PlayerCmd_usingGamepad()
-void sub_823DE558(char* p0)
-void PlayerCmd_IsThrowingGrenade()
-void ScriptEntCmd_MoveTo(float* p0)
-void ScriptEntCmd_MoveX(float p0)
-void ScriptEntCmd_MoveY()
-void ScriptEntCmd_MoveZ()
-void ScriptEntCmd_GravityMove(float* p0, float p1)
-void ScriptEntCmd_MoveSlide(float* p0, float p1, float* p2)
-void ScriptEntCmd_StopMoveSlide()
-void ScriptEntCmd_RotateTo()
-void ScriptEntCmd_RotateBy()
-void ScriptEntCmd_RotatePitch(float p0)
-void ScriptEntCmd_RotateYaw()
-void ScriptEntCmd_RotateRoll()
-void ScriptEntCmd_AddPitch(float p0)
-void ScriptEntCmd_AddYaw()
-void ScriptEntCmd_AddRoll()
-void ScriptEntCmd_Vibrate(float* p0, float p1, float p2, float p3)
-void ScriptEntCmd_RotateVelocity(float* p0)
-void ScriptEntCmd_Solid()
-void ScriptEntCmd_NotSolid()
-void ScriptEntCmd_SetCanDamage(int p0)
-void ScriptEntCmd_SetCanRadiusDamage(int p0)
-void ScriptEntCmd_PhysicsLaunchClient(float* p0, float* p1)
-void ScriptEntCmd_PhysicsLaunchServer(float* p0, float* p1, float p2, float p3, float p2)
-void ScriptEntCmd_PhysicsLaunchServerItem(float* p0, float* p1)
-void ScriptEntCmd_CloneBrushModelToScriptModel()
-void ScriptEntCmd_ScriptModelPlayAnim()
-void ScriptEntCmd_ScriptModelClearAnim()
-void ScriptEntCmd_ScriptModelPlayAnimDeltaMotion(char* p0)
-void ScriptEntCmd_PhysicsSetMaxLinVel(float p0)
-void ScriptEntCmd_PhysicsSetMaxAngVel(float p0)
-void ScriptEntCmd_PhysicsGetLinVel()
-void ScriptEntCmd_PhysicsGetLinSpeed()
-void ScriptEntCmd_PhysicsGetAngVel()
-void ScriptEntCmd_PhysicsGetAngSpeed()
-void VehCmd_Teleport(float* p0, float* p1)
-void VehCmd_AttachPath()
-void VehCmd_GetAttachPos()
-void VehCmd_StartPath()
-void VehCmd_SetSwitchNode()
-void VehCmd_SetWaitSpeed(float p0)
-void VehCmd_FinishDamage(Entity p0, Entity p1, int p2, int p3, char* p5, float* p6, float* p7, int p9, int p10)
-void VehCmd_SetSpeed()
-void VehCmd_SetSpeedImmediate()
-void VehCmd_RotateYaw(float p0, float p1)
-float VehCmd_GetSpeed()
-vector VehCmd_GetVelocity()
-vector VehCmd_GetBodyVelocity()
-float VehCmd_GetSteering()
-float VehCmd_GetThrottle()
-void VehCmd_TurnEngineOff()
-void VehCmd_TurnEngineOn()
-float VehCmd_GetGoalSpeedMPH()
-void VehCmd_SetAcceleration(float p0)
-void VehCmd_SetDeceleration(float p0)
-void VehCmd_ResumeSpeed(float p0)
-void VehCmd_SetYawSpeed(float p0, float p1, float p2, float p3)
-void VehCmd_SetYawSpeedByName(char* p0)
-void VehCmd_SetMaxPitchRoll(float p0, float p1)
-void VehCmd_SetAirResitance(float p0)
-void VehCmd_SetTurningAbility(float p0)
-void VehCmd_SetJitterParams(float* p0, float p1, float p2)
-void VehCmd_SetHoverParams(float p0, float p1, float p2)
-void VehCmd_JoltBody(float* p0, float p1, float p2, float p3)
-void VehCmd_FreeVehicle()
-string VehCmd_GetWheelSurface()
-void VehCmd_GetVehicleOwner()
-void VehCmd_SetDroneGoalPos(float* p1)
-void VehCmd_SetVehicleLookatText()
-void VehCmd_SetVehicleTeam()
-void VehCmd_NearGoalNotifyDist(float p0)
-void VehCmd_SetGoalPos(float* p0, int p1)
-void VehCmd_SetGoalYaw(float p0)
-void VehCmd_ClearGoalYaw()
-void VehCmd_SetTargetYaw(float p0)
-void VehCmd_ClearTargetYaw()
-void VehCmd_HeliSetGoal(float* p0, Entity p1, float p1, Entity p2, float p2, Entity p3, float p3, Entity p4, int p4, Entity p5, float p6, Entity p7, float p7, int p8, int p9, int p10, int p11, int p12)
-void VehCmd_SetTurretTargetVec(float* p0)
-void VehCmd_SetTurretTargetEnt(float* p1)
-void VehCmd_ClearTurretTargetEnt()
-void VehCmd_CanTurretTargetPoint(float* p0, int p1)
-void VehCmd_SetLookAtEnt()
-void VehCmd_ClearLookAtEnt()
-void VehCmd_SetWeapon(char* p0)
-void VehCmd_FireWeapon(Entity p3, float p3, Entity p0, Entity p1, Entity p2, float* p2)
-void VehCmd_VehicleTurretControlOn()
-void VehCmd_VehicleTurretControlOff()
-int VehCmd_IsTurretReady()
-void VehCmd_VehicleDriveTo(float* p0, float p1)
-void VehCmd_DoSpawn()
-void VehCmd_IsPhysVeh()
-void VehPhysCmd_Crash(int p0)
-void VehPhysCmd_Launch(float* p0, float* p2, float p1)
-void VehPhysCmd_DisableCrashing()
-void VehPhysCmd_EnableCrashing()
-void VehPhysCmd_SetSpeed(float p0)
-void VehPhysCmd_SetConveyorBelt(float p1, float p0)
-void VehCmd_FreeVehicle()
-void CMD_Heli_SetDamageStage(int p0)
-void HECmd_SetText(char* p0)
-void nullsub_148()
-void HECmd_SetMaterial(char* p0, int p1, int p2)
-void HECmd_SetTargetEnt()
-void HECmd_ClearTargetEnt()
-void HECmd_SetTimer(float p0)
-void HECmd_TimerUp()
-void HECmd_SetTimerStatic()
-void HECmd_SetTenthsTimer()
-void HECmd_SetTenthsTimerUp(float p0)
-void HECmd_SetTenthsTimerStatic(float p0)
-void HECmd_SetClock(float p0, float p1, char* p2, int p3, int p4)
-void HECmd_SetClockUp()
-void HECmd_SetValue(float p0)
-void HECmd_SetWaypoint(int p0, int p2, int p1, int p3)
-void HECmd_SetWaypointEdgeStyle_RotatingIcon()
-void HECmd_SetWaypointEdgeStyle_SecondArrow()
-void HECmd_SetWaypointIconOffscreenOnly()
-void HECmd_FadeOverTime(float p0)
-void HECmd_ScaleOverTime(float p0, int p1, int p2)
-void HECmd_MoveOverTime(float p0)
-void HECmd_Reset()
-void HECmd_Destroy()
-void HECmd_SetPulseFX(int p0, int p1, int p2)
-void HECmd_SetPlayerNameString()
-void HECmd_ChangeFontScaleOverTime(float p0)
-void HECmd_LinkWaypointToTargetWithOffset(float* p1)
-void everyVisitCallback()
-void SentientCmd_GetEnemySqDist()
-void SentientCmd_GetClosestEnemySqDist(float* p0, float p1)
-void SentientCmd_SetThreatBiasGroup()
-string SentientCmd_GetThreatBiasGroup()
-void SentientCmd_MakeEntitySentient(int p1)
-void SentientCmd_FreeEntitySentient()
-void SentientCmd_LastKnownTime()
-void SentientCmd_LastKnownPos()
-void SentientCmd_SetIgnoreFoliageSightingMe(int p0)
-void nullsub_120()
-void nullsub_121()
-void Scr_Print()
-void Scr_PrintLn()
-void nullsub_122()
-void nullsub_123()
-void nullsub_124()
-void nullsub_125()
-void nullsub_126()
-void nullsub_127()
-void nullsub_128()
-void GScr_PrecacheTurret(char* p0)
-array Scr_GetWeaponArray()
-void GScr_SpawnTurret(float* p1, char* p2, int p3)
-void GScr_CanSpawnTurret()
-void assertexCmd(int p0)
-void sub_82405EA8(int p0)
-void Scr_SetPathnodeField()
-int GScr_IsDefined(Entity p0)
-int GScr_IsValidMissile(Entity p0)
-int GScr_IsString(Entity p0)
-int GScr_IsSentient(Entity p0)
-int GScr_GetIndexForLuiNCString(char* p0)
-void GScr_SetOmnvar(char* p0, int p1, int p1, int p1, float p1, char* p1)
-void GScr_GetOmnvar(char* p0)
-void GScr_SetDvar(char* p0, Entity p1, char* p1, char* p1)
-void GScr_SetDynamicDvar(char* p0, Entity p1, char* p1, char* p1)
-void GScr_SetDvarIfUninitialized(char* p0, char* p1)
-void sub_82406640(char* p0, Entity p1, char* p1, char* p1)
-void sub_824067D8(char* p0, char* p1)
-string GScr_GetDvar(char* p1, char* p0)
-int GScr_GetDvarInt(char* p1, char* p0)
-float GScr_GetDvarFloat(char* p1, char* p0)
-void GScr_GetDvarVector(char* p1, char* p0)
-void GScr_GetTime()
-void Scr_GetEntByNum(int p0)
-string Scr_GetWeaponModel(char* p0, int p1)
-void Scr_GetWeaponDisplayName(char* p0)
-string Scr_GetWeaponBaseName(char* p0)
-array Scr_GetWeaponAttachments(char* p0)
-array Scr_GetWeaponAttachmentDisplayNames(char* p0)
-void Scr_GetWeaponCamoName(char* p0)
-void Scr_GetWeaponReticleName(char* p0)
-array Scr_GetWeaponHideTags(char* p0)
-float GScr_GetAnimLength()
-void GScr_AnimHasNotetrack()
-void GScr_GetNotetrackTimes()
-void GScr_Spawn(float* p1, int p2, int p3)
-void GScr_Spawn(float* p1, int p2, int p3)
-void j_Scr_ErrorInternal_9()
-void Scr_BulletTrace(float* p0, float* p1, int p2, Entity p3, int p4, int p5, int p6, int p7, int p8)
-void Scr_BulletTracePassed(float* p2047, float* p1, int p2, Entity p3)
-void Scr_SightTracePassed(float* p2047, float* p1, int p2, Entity p3, Entity p4)
-void Scr_PhysicsTrace(float* p0, float* p1)
-void Scr_PlayerPhysicsTrace(float* p0, float* p1)
-void Scr_GetGroundPosition(float* p0, float p1, float p2, float p3)
-void GScr_GetMoveDelta(float p2, float p1)
-void GScr_GetAngleDelta(float p2, float p1)
-void GScr_GetAngleDelta3D(float p2, float p1)
-void GScr_GetNorthYaw()
-void GScr_SetNorthYaw(float p0)
-void ScrCmd_SetSlowMotion(float p1000, float p1, float p2)
-int Scr_RandomInt(int p0)
-float Scr_RandomFloat(float p0)
-int Scr_RandomIntRange(int p0, int p1)
-float Scr_RandomFloatRange(float p0, float p1)
-float GScr_sin(float p0)
-float GScr_cos(float p0)
-float GScr_tan(float p0)
-float GScr_asin(float p0)
-float GScr_acos(float p0)
-float GScr_atan(float p0)
-int GScr_CastInt(Entity p0, int p0, float p0, char* p0)
-float GScr_CastFloat(Entity p0, int p0, float p0, char* p0)
-float GScr_abs(float p0)
-float GScr_min(float p1, float p0)
-float GScr_max(float p1, float p0)
-float GScr_floor(float p0)
-float GScr_ceil(float p0)
-float GScr_exp(float p0)
-float GScr_log(float p0)
-float GScr_sqrt(float p0)
-float GScr_squared(float p0)
-float GScr_clamp(float p2, float p1, float p0)
-float GScr_pow(float p1, float p0)
-float GScr_AngleClamp360(float p0)
-float GScr_AngleClamp180(float p0)
-void GScr_VectorFromLineToPoint(float* p0, float* p1, float* p2)
-void GScr_PointOnSegmentNearestToPoint(float* p0, float* p1, float* p2)
-void GScr_IsPointInVolume(float* p0)
-void Scr_Distance(float* p0, float* p1)
-void Scr_Distance2D(float* p0, float* p1)
-void Scr_Distance2DSquared(float* p0, float* p1)
-void Scr_DistanceSquared(float* p0, float* p1)
-void Scr_Length(float* p0)
-void Scr_Length2D(float* p0)
-void Scr_LengthSquared(float* p0)
-void Scr_Length2DSquared(float* p0)
-void Scr_Closer(float* p0, float* p1, float* p2)
-void Scr_VectorDot(float* p0, float* p1)
-void Scr_VectorCross(float* p0, float* p1)
-void Scr_VectorNormalize(float* p0)
-void Scr_VectorToAngles(float* p0)
-void Scr_VectorToYaw(float* p0)
-void Scr_VectorLerp(float* p0, float* p1, float p2)
-void Scr_AxisToAngles(float* p0, float* p1, float* p2)
-void Scr_AnglesToAxis(float* p0)
-void Scr_AnglesToUp(float* p0)
-void Scr_AnglesToRight(float* p0)
-void Scr_AnglesToForward(float* p0)
-void Scr_AnglesDelta(float* p0, float* p1)
-void Scr_CombineAngles(float* p0, float* p1)
-void Scr_TransformMove(float* p0, float* p1, float* p2, float* p3, float* p4, float* p5)
-void Scr_RotateVector(float* p0, float* p1)
-void Scr_RotatePointAroundVector(float* p0, float* p1, float p2)
-void Scr_InvertAngles(float* p0)
-void Scr_RotateVectorInverted(float* p0, float* p1)
-void Scr_CalculateStartOrientation(float* p0, float* p1, float* p2, float* p3)
-void Scr_IsSubStr(char* p1, char* p0)
-void Scr_IsEndStr(char* p0, char* p1)
-void Scr_GetSubStr(char* p0, int p1, int p2)
-void Scr_ToLower()
-array Scr_StrTok()
-int Scr_StrICmp()
-void sub_82416598(int p3, float p2, float p1, char* p0)
-void Scr_AmbientStop(char* p1, float p0)
-void Scr_PrecacheModel(char* p0)
-void Scr_PrecacheShellShock(char* p0)
-void Scr_PrecacheItem(char* p0)
-void Scr_PrecacheMaterial(char* p0)
-void Scr_PrecacheString(const char* p0)
-void GScr_PrecacheMenu(char* p0)
-void Scr_PrecacheRumble(char* p0)
-void GScr_PrecacheLocationSelector(char* p0)
-void Scr_PrecacheLeaderboards(char* p0)
-void GScr_PrecacheHeadIcon(char* p0)
-int Scr_LoadFX(char* p0)
-void Scr_PlayFX(int p0, float* p1, float* p2, float* p3)
-void Scr_PlayFXOnTag(int p0, char* p2)
-void Scr_StopFXOnTag(int p0, char* p2)
-void Scr_KillFXOnTag(int p0, char* p2)
-void Scr_PlayLoopedFX(int p0, float* p5, float* p4, float p3, float* p2, float p1)
-void Scr_SpawnFX(int p0, float* p3, float* p2, float* p1)
-void Scr_SpawnFXForClient(int p0, float* p4, float* p3, float* p1)
-void Scr_TriggerFX(float p1)
-void Scr_PlayFXOnTagForClients(int p0, char* p2, Entity p3)
-void Scr_PhysicsExplosionSphere(float* p0, float p1, float p2, float p3)
-void Scr_PhysicsExplosionCylinder(float* p0, float p1, float p2, float p3)
-void Scr_PhysicsRadiusJolt(float* p0, float p1, float p2, float* p3)
-void Scr_PhysicsRadiusJitter(float* p0, float p1, float p2, float p3, float p4)
-void Scr_SetExponentialFog()
-void Scr_ClearFog(float p0)
-void GScr_IsExplosiveDamageMOD()
-void GScr_RadiusDamage()
-void GScr_SetPlayerIgnoreRadiusDamage(int p0)
-void GScr_GlassRadiusDamage(float* p0, float p1, float p2, float p3)
-void GScr_Earthquake(float p0, float p1, float* p2, float p3)
-int GScr_GetNumParts(char* p0)
-conststring GScr_GetPartName(char* p0, int p1)
-float GScr_WeaponFireTime(char* p0)
-int GScr_WeaponClipSize(char* p0)
-int GScr_WeaponIsAuto(char* p0)
-int GScr_WeaponIsSemiAuto(char* p0)
-int GScr_WeaponIsBoltAction(char* p0)
-int GScr_WeaponInheritsPerks(char* p0)
-int GScr_WeaponBurstCount(char* p0)
-string GScr_WeaponType(char* p0)
-string GScr_WeaponClass(char* p0)
-string GScr_WeaponInventoryType(char* p0)
-int GScr_WeaponStartAmmo(char* p0)
-int GScr_WeaponMaxAmmo(char* p0)
-void GScr_WeaponAltWeaponName(char* p0)
-void GScr_IsWeaponClipOnly(char* p0)
-void GScr_IsWeaponDetonationTimed(char* p0)
-int GScr_WeaponHasThermalScope(char* p0)
-entitynum VehPathCmd_GetNode(char* p1)
-array VehPathCmd_GetNodeArray(char* p1)
-array VehPathCmd_GetAllNodes()
-int VehicleScript_GetActiveCount()
-void VehicleScript_Precache(char* p0)
-void VehicleScript_Spawn(char* p0, float* p3, float* p4)
-array VehicleScript_GetArray()
-array VehicleScript_GetSpawnerArray()
-void Scr_PlayRumbleOnPosition()
-void Scr_PlayRumbleLoopOnPosition()
-void Scr_StopAllRumbles()
-void ScrCmd_SoundExists(char* p0)
-void nullsub_129()
-void nullsub_130()
-void nullsub_131()
-void nullsub_132()
-void nullsub_133()
-void nullsub_134()
-void GScr_SetMiniMap(char* p0, float p1, float p2, float p3, float p4)
-void GScr_SetThermalBodyMaterial(char* p0)
-void j_Scr_ErrorInternal_10()
-void GScr_GetArrayKeys(Object p0)
-void GScr_GetFirstArrayKey(Object p0)
-void GScr_GetNextArrayKey(Object p0)
-void GScr_SortByDistance(Object p0, float* p1)
-string Scr_TableLookup(char* p0, int p1, char* p2, int p3)
-string Scr_TableLookupIStringByRow(char* p0, int p1, int p2)
-void Scr_TableLookupIString(char* p0, int p1, char* p2, int p3)
-string sub_8240EB88(char* p0, int p1, int p2)
-int Scr_TableLookupRowNum(char* p0, int p1, char* p2)
-void Scr_TableExists(char* p0)
-int Scr_LookupSoundLength(char* p0)
-void GScr_GetMissileOwner()
-void Scr_MagicBullet(char* p0, float* p1, float* p2)
-conststring Scr_GetWeaponFlashTagname(char* p0)
-void GScr_AveragePoint()
-void GScr_AverageNormal()
-int GScr_GetGlass()
-array GScr_GetGlassArray()
-void GScr_GetGlassOrigin(int p0)
-void GScr_IsGlassDestroyed(int p0)
-void GScr_DestroyGlass(int p0, float* p1)
-void GScr_DeleteGlass(int p0)
-int GScr_IsHairRunning()
-string GScr_GetEntChannelName(int p0)
-void Scr_BadPlace_Delete(char* p0)
-void Scr_BadPlace_Cylinder(char* p0, float p1, float* p2, float p3, float p4)
-void Scr_BadPlace_Arc(char* p0, float p1, float* p2, float p3, float p4, float* p5, float p6, float p7)
-void Scr_BadPlace_Brush(char* p0, float p1)
-void Scr_BadPlace_Global(char* p0, float p1)
-void nullsub_135()
-void Scr_GetClosestNodeInSight(float* p0)
-array Scr_GetLinkedNodes()
-void Scr_ActivateClientExploder(int p0, Entity p1, Entity p1, Object p1, Entity p1, Object p1, Entity p2, float p2)
-void Scr_TrajectoryCalculateInitialVelocity(float* p0, float* p1, float* p2, float p3)
-void Scr_TrajectoryCalculateMinimumVelocity(float* p0, float* p1, float p2)
-float Scr_TrajectoryCalculateExitAngle(float p0, float p1, float p2, float p3)
-void Scr_TrajectoryEstimateDesiredInAirTime(float* p0, float* p1, float p2, float p3)
-float Scr_TrajectoryComputeDeltaHeightAtTime(float p0, float p1, float p2)
-void Scr_TrajectoryCanAttemptAccurateJump(float* p0, float* p1, float* p2, float* p3, float p4, float p5)
-int GScr_IsArray(Entity p0)
-void nullsub_136()
-void nullsub_137()
-void nullsub_138()
-void nullsub_139()
-void GScr_GetEnemySquadData()
-int GScr_GetEnemySquadDogType()
-int GScr_GetSquadAssaultELO()
-void GScr_GetScriptableArray(char* p0, char* p1)
-void GScr_DisconnectNodePair(int p2)
-void GScr_ConnectNodePair(int p2)
-int GScr_GetCSplineCount()
-int GScr_GetCSplinePointCount()
-float GScr_GetCSplineLength()
-int GScr_GetCSplinePointId()
-string GScr_GetCSplinePointLabel()
-float GScr_GetCSplinePointTension()
-void GScr_GetCSplinePointPosition()
-void GScr_GetCSplinePointCorridorDims()
-void GScr_GetCSplinePointTangent()
-float GScr_GetCSplinePointDistToNextPoint()
-void GScr_CalcCSplinePosition()
-void GScr_CalcCSplineTangent()
-void GScr_CalcCSplineCorridor()
-void GScr_SetNoJIPScore(int p0)
-void GScr_SetNoJIPTime(int p0)
-void nullsub_140()
-void nullsub_141()
-void nullsub_142()
-void nullsub_143()
-void nullsub_144()
-void nullsub_145()
-void nullsub_146()
-void nullsub_147()
-void GScr_LoadLuiFile(char* p0)
-int GScr_GetSquadAssaultSquadIndex(int p0)
-void sub_82412030()
-void Scr_Objective_Add(int p0, float* p2)
-void Scr_Objective_Delete(int p0)
-void Scr_Objective_State(int p0)
-void Scr_Objective_Icon(int p0)
-void Scr_Objective_Position(int p0, float* p1)
-void Scr_Objective_Current(int p0)
-void Scr_Objective_OnEntity(int p0)
-void Scr_Objective_OnEntityWithRotation(int p0)
-void GScr_Objective_Team(int p0)
-void GScr_Objective_Player(int p0, int p1)
-void GScr_Objective_PlayerTeam(int p0, int p1)
-void GScr_Objective_PlayerEnemyTeam(int p0, int p1)
-void GScr_Objective_PlayerMask_HideFromAll(int p0)
-void GScr_Objective_PlayerMask_HideFrom(int p0, int p1)
-void GScr_Objective_PlayerMask_ShowToAll(int p0)
-void GScr_Objective_PlayerMask_ShowTo(int p0, int p1)
-void SentientCmd_CreateThreatBiasGroup()
-void SentientCmd_ThreatBiasGroupExists()
-int SentientCmd_GetThreatBias()
-void SentientCmd_SetThreatBias(int p2)
-void SentientCmd_SetThreatBiasAgainstAll(int p1)
-void SentientCmd_SetIgnoreMeGroup()
-int SentientCmd_IsEnemyTeam()
-void iprintln(char* p0)
-void iprintlnbold(char* p0)
-void nullsub_150()
-entitynum Scr_GetEnt(char* p1)
-void Scr_GetEntArray(char* p1)
-void Scr_GetSpawnArray()
-void GScr_GetStartOrigin(float* p0, float* p1)
-void GScr_GetStartAngles(float* p0, float* p1)
-void GScr_SpawnPlane(float* p2, Entity p3, char* p3, Entity p4, char* p4, int p5)
-void Scr_AddStruct()
-void GScr_SpawnHelicopter(float* p1, float* p2, char* p3, char* p4)
-int GScr_IsAlive(Entity p0)
-int GScr_IsSpawner(Entity p0)
-int Scr_MissileCreateAttractorEnt(float p1, float p2)
-int Scr_MissileCreateAttractorOrigin(float* p0, float p1, float p2)
-int Scr_MissileCreateRepulsorEnt(float p1, float p2)
-int Scr_MissileCreateRepulsorOrigin(float* p0, float p1, float p2)
-void Scr_MissileDeleteAttractor(int p0)
-void ScrCmd_PlaySoundAtPos(float* p0, char* p1)
-void ScrCmd_PrecacheSound(char* p0)
-void GScr_NewHudElem()
-void GScr_NewClientHudElem()
-void GScr_NewTeamHudElem()
-void Scr_ResetTimeout()
-int GScr_IsPlayer(Entity p0)
-int GScr_IsPlayerNumber(int p0)
-int GScr_IsAI(Entity p0)
-void Scr_SetSunLight(float p2, float p1, float p0)
-void Scr_ResetSunLight()
-void GScr_SetWinningTeam()
-void GScr_Announcement(char* p0)
-void GScr_ClientAnnouncement(char* p1)
-int GScr_GetTeamScore()
-void GScr_SetTeamScore(int p1)
-void GScr_SetClientNameMode()
-void GScr_UpdateClientNames()
-int GScr_GetTeamPlayersAlive()
-void nullsub_151()
-void GScr_PlayCinematicForAll(char* p0)
-void GScr_PreloadCinematicForAll(char* p0)
-void GScr_StopCinematicForAll()
-void GScr_WorldEntNumber()
-void GScr_Obituary(char* p2, Entity p1)
-void GScr_positionWouldTelefrag(float* p0)
-void GScr_CanSpawn(float* p0)
-void GScr_CapsuleTracePassed(float* p0, float p1, float p2, Entity p3, int p4, int p5)
-void GScr_getStartTime()
-void GScr_PrecacheStatusIcon(char* p0)
-void GScr_PrecacheMiniMapIcon(char* p0)
-void GScr_PrecacheMpAnim(char* p0)
-void GScr_MapRestart(int p0)
-void GScr_ExitLevel(int p0)
-void GScr_AddTestClient(int p0, int p0, int p1, int p2, int p0, int p1, int p2)
-void GScr_AddAgent()
-void nullsub_152()
-void GScr_AllClientsPrint(char* p0)
-void GScr_ClientPrint(char* p1)
-int GScr_MapExists()
-int GScr_IsValidGameType(char* p0)
-void nullsub_153()
-void GScr_SetPlayerTeamRank(int p1, int p2, int p2)
-void nullsub_154()
-void GScr_SetTeamRadar(int p1)
-int GScr_GetTeamRadar()
-void GScr_SetTeamRadarStrength(int p1)
-int GScr_GetTeamRadarStrength()
-void GScr_GetUAVStrengthMin()
-void GScr_GetUAVStrengthMax()
-void sub_8241FB58()
-void GScr_GetUAVStrengthLevelShowEnemyFastSweep()
-void sub_8241FB68()
-void GScr_BlockTeamRadar()
-void GScr_UnblockTeamRadar()
-int GScr_IsTeamRadarBlocked()
-int sub_8241E140()
-void GScr_SetMatchData()
-void GScr_GetMatchData()
-void GScr_SendMatchData()
-void GScr_ClearMatchData()
-void GScr_SetMatchDataDef(char* p0)
-void GScr_SetMatchClientIP(int p1)
-void GScr_SetMatchDataID()
-void GScr_SetClientMatchData()
-void GScr_GetClientMatchData()
-void GScr_SetClientMatchDataDef(char* p0)
-void GScr_SendClientMatchData()
-void GScr_GetBuildVersion()
-int GScr_GetBuildNumber()
-int GScr_GetSystemTime()
-void GScr_GetMatchRulesData()
-void GScr_IsUsingMatchRulesData()
-void GScr_KickPlayer(char* p1, int p0)
-int sub_8241E0B0()
-void GScr_SetMapCenter(float* p0)
-void GScr_SetGameEndTime(int p0)
-void Scr_VisionSetNaked(float p1, char* p0)
-void Scr_VisionSetNight(float p1, char* p0)
-void Scr_VisionSetMissilecam(float p1, char* p0)
-void Scr_VisionSetThermal(float p1, char* p0)
-void Scr_VisionSetPain(float p1, char* p0)
-void Scr_VisionSetPostApply(float p1, char* p0)
-void sub_8241FD20()
-void GScr_SetAC130Ambience(float p1, char* p0)
-string GScr_GetMapCustomField(char* p0)
-void GScr_SpawnSightTrace(float* p1, float* p2)
-void GScr_IncrementCounter(char* p0, int p1)
-string GScr_GetCounterTotal(char* p0)
-void GScr_SetTeamMode()
-entitynum Scr_GetNode(char* p1)
-array Scr_GetNodeArray(char* p1)
-array Scr_GetAllNodes()
-void Scr_GetNodesInRadius(float* p0, float p1, float p2, float p3, char* p4)
-void Scr_GetNodesInRadiusSorted()
-void Scr_GetZoneCount()
-void Scr_GetZoneNearest(float* p0)
-int Scr_GetNodeZone()
-void Scr_GetZoneNodes(int p0, int p1)
-void Scr_GetZoneNodesByDist(int p0, float p1, int p2)
-entitynum Scr_GetZoneNodeForIndex(int p0)
-void Scr_GetZonePath(int p0, int p1)
-void Scr_GetZoneOrigin(int p0)
-void Scr_FindEntrances(float* p0)
-int Scr_NodeExposedToSky()
-void Scr_GetNodesInTrigger()
-void Scr_NodesVisible(int p2)
-void Scr_GetNodesOnPath(float* p0, float* p1)
-int Scr_IsBot(Entity p0)
-void Scr_BotGetClosestNavigablePoint(float* p0, float p1, Entity p2)
-int Scr_BotMemoryFlags(char* p0)
-void Scr_BotFlagMemoryEvents(int p0, int p1, int p2, float* p3, float p4, char* p5, int p6, Entity p7)
-void Scr_BotGetMemoryEvents(int p0, int p1, int p2, char* p3, int p4, Entity p5)
-int Scr_BotAutoConnectEnabled()
-void Scr_BotZoneGetCount(int p0, char* p2)
-void Scr_BotZoneGetIndoorPercent(int p0)
-void Scr_BotZoneSetTeam(int p0)
-void Scr_BotZoneNearestCount(int p0, int p2, char* p3, char* p3, int p3)
-void nullsub_155()
-void Scr_BotSentientSwap()
-void Scr_BotGetTeamLimit(int p0)
-void Scr_BotGetTeamDifficulty(int p0)
-int Scr_GetWeaponExplosionRadius(char* p0)
-void Scr_GetPredictedEntityPosition(float p1)
-void Scr_GetPathDist(float* p0, float* p1, float p2)
-void nullsub_156()
-void Scr_MarkDangerousNodes(float* p0, float p1, int p2)
-void Scr_MarkDangerousNodesInTrigger(int p1)
-int Scr_IsAgent(Entity p0)
-int Scr_GetMaxAgents()
-void Scr_SetLevelDopplerPreset(char* p0)
-void ScrCmd_QueueDialog(char* p0, char* p1, float p3, Entity p4, Entity p5, Entity p6, Entity p7, float* p7)
-void ScrCmd_TriggerPortableRadarPing(float* p0)
-void ScrCmd_IsDedicatedServer()
-int ScrCmd_GetPlaylistVersion()
-int ScrCmd_GetPlaylistID()
-void ScrCmd_GetActiveClientCount()
-void Scr_IsSquadsMode()
-void GScr_AddBot(int p3, int p2, int p1, char* p0)
-int Scr_GetSquadAssaultEnemyPrestige()
+void AI_GetEnemyInfo(entity p0){PushValue(p0);callScriptFunction<void>(0x8234, entref);}
+void AgentCmd_AgentCanSeeSentient(entity p0){PushValue(p0);callScriptFunction<void>(0x8380, entref);}
+entity AgentCmd_CloneAgent(int p0){PushValue(p0);return callScriptFunction<entity>(0x837f, entref);}
+int AgentCmd_FinishAgentDamage(entity p0, entity p1, int p2, int p3, script_string_s p5, float* p6, float* p7, int p9, float p10){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p5);PushValue(p6);PushValue(p7);PushValue(p9);PushValue(p10);return callScriptFunction<int>(0x837d, entref);}
+void AgentCmd_SetAgentAttacker(entity p0){PushValue(p0);callScriptFunction<void>(0x837e, entref);}
+void AgentCmd_SpawnAgent(float* p0, float* p1, script_string_s p2, float p3, float p4, entity p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0x837c, entref);}
+void AnimStateCmd_EnableAnimState(int p0){PushValue(p0);callScriptFunction<void>(0x839e, entref);}
+void AnimStateCmd_SetAnimClass(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x839d, entref);}
+int AnimStateCmd_SetAnimState(int p1, float p2){PushValue(p1);PushValue(p2);return callScriptFunction<int>(0x839f, entref);}
+void CMD_Heli_SetDamageStage(int p0){PushValue(p0);callScriptFunction<void>(0x8325, entref);}
+void GScrCmd_SetWaterSheeting(int p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x80a7, entref);}
+void GScr_AddBot(script_string_s p0, int p1, int p2, int p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x256, entref);}
+void GScr_AddTestClient(int p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x109, entref);}
+void GScr_AliensCheckIsItemPurchased(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x842a, entref);}
+void GScr_AliensCheckIsRelicEnabled(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x842d, entref);}
+void GScr_AliensCheckIsUpgradeEnabled(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x842c, entref);}
+void GScr_AliensSetHasCraftedItem(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x842b, entref);}
+void GScr_AllClientsPrint(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x10c, entref);}
+float GScr_AngleClamp180(float p0){PushValue(p0);return callScriptFunction<float>(0x52, entref);}
+float GScr_AngleClamp360(float p0){PushValue(p0);return callScriptFunction<float>(0x51, entref);}
+void GScr_Announcement(script_string_s p0){PushValue(p0);callScriptFunction<void>(0xf5, entref);}
+void GScr_CameraLinkTo(entity p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x808d, entref);}
+int GScr_CanSpawn(float* p0){PushValue(p0);return callScriptFunction<int>(0x101, entref);}
+void GScr_CapsuleTracePassed(float* p0, float p1, float p2, entity p3, int p4, int p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0x25d, entref);}
+float GScr_CastFloat(){callScriptFunction<float>(0x46, entref);}
+float GScr_CastFloat(float p0){PushValue(p0);return callScriptFunction<float>(0x46, entref);}
+float GScr_CastFloat(int p0){PushValue(p0);return callScriptFunction<float>(0x46, entref);}
+float GScr_CastFloat(script_string_s p0){PushValue(p0);return callScriptFunction<float>(0x46, entref);}
+int GScr_CastInt(){return callScriptFunction<int>(0x45, entref);}
+int GScr_CastInt(float p0){PushValue(p0);return callScriptFunction<int>(0x45, entref);}
+int GScr_CastInt(int p0){PushValue(p0);return callScriptFunction<int>(0x45, entref);}
+int GScr_CastInt(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x45, entref);}
+void GScr_ClientAnnouncement(entity p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xf6, entref);}
+void GScr_ClientClaimTrigger(entity p0){PushValue(p0);callScriptFunction<void>(0x8332, entref);}
+void GScr_ClientPrint(entity p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x10d, entref);}
+void GScr_ClientReleaseTrigger(entity p0){PushValue(p0);callScriptFunction<void>(0x8333, entref);}
+void GScr_ConnectNodePair(int p2){PushValue(p2);callScriptFunction<void>(0x201, entref);}
+void GScr_ControlsLinkTo(entity p0){PushValue(p0);callScriptFunction<void>(0x808f, entref);}
+float GScr_DamageConeTrace(float* p0, entity p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x8082, entref);}
+void GScr_DeleteGlass(int p0){PushValue(p0);callScriptFunction<void>(0xca, entref);}
+void GScr_DestroyGlass(int p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xc9, entref);}
+void GScr_Detonate(entity p0){PushValue(p0);callScriptFunction<void>(0x8081, entref);}
+void GScr_DisconnectNodePair(int p2){PushValue(p2);callScriptFunction<void>(0x200, entref);}
+void GScr_DriveVehicleAndControlTurret(entity p0){PushValue(p0);callScriptFunction<void>(0x809a, entref);}
+void GScr_DriveVehicleAndControlTurretOff(entity p0){PushValue(p0);callScriptFunction<void>(0x809b, entref);}
+void GScr_Earthquake(float p0, float p1, float* p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x8f, entref);}
+void GScr_EmissiveBlend(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83d6, entref);}
+void GScr_ExitLevel(int p0){PushValue(p0);callScriptFunction<void>(0x108, entref);}
+int GScr_GetAmmoCount(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x806c, entref);}
+float GScr_GetAngleDelta(float p1, float p2){PushValue(p1);PushValue(p2);return callScriptFunction<float>(0x37, entref);}
+float* GScr_GetAngleDelta3D(float p1, float p2){PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x211, entref);}
+void GScr_GetArrayKeys(object p0){PushValue(p0);callScriptFunction<void>(0xb6, entref);}
+int GScr_GetCaCPlayerData(int p1){PushValue(p1);return callScriptFunction<int>(0x80b9, entref);}
+void GScr_GetCommonPlayerDataReservedInt(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8425, entref);}
+void GScr_GetCoopPlayerDataReservedInt(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8426, entref);}
+script_string_s GScr_GetCounterTotal(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x13e, entref);}
+script_string_s GScr_GetDvar(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);return callScriptFunction<script_string_s>(0x1c, entref);}
+float GScr_GetDvarFloat(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x1e, entref);}
+int GScr_GetDvarInt(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);return callScriptFunction<int>(0x1d, entref);}
+float* GScr_GetDvarVector(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x1f, entref);}
+script_string_s GScr_GetEntChannelName(int p0){PushValue(p0);return callScriptFunction<script_string_s>(0xcc, entref);}
+void GScr_GetFirstArrayKey(object p0){PushValue(p0);callScriptFunction<void>(0xb7, entref);}
+float* GScr_GetGlassOrigin(int p0){PushValue(p0);return callScriptFunction<float*>(0xc7, entref);}
+int GScr_GetIndexForLuiNCString(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x162, entref);}
+script_string_s GScr_GetMapCustomField(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x13b, entref);}
+void GScr_GetMissileOwner(entity p0){PushValue(p0);callScriptFunction<void>(0xc0, entref);}
+float* GScr_GetMoveDelta(float p1, float p2){PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x36, entref);}
+void GScr_GetNextArrayKey(object p0){PushValue(p0);callScriptFunction<void>(0xb8, entref);}
+int GScr_GetNumParts(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x90, entref);}
+int GScr_GetOmnvar(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x16, entref);}
+conststring GScr_GetPartName(script_string_s p0, int p1){PushValue(p0);PushValue(p1);return callScriptFunction<conststring>(0x91, entref);}
+script_string_s GScr_GetPlayerSetting(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x809c, entref);}
+void GScr_GetRankedPlayerDataReservedInt(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x841f, entref);}
+array GScr_GetScriptableArray(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);return callScriptFunction<array>(0x5d03, entref);}
+int GScr_GetSquadAssaultSquadIndex(int p0){PushValue(p0);return callScriptFunction<int>(0x254, entref);}
+float* GScr_GetStartAngles(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x191, entref);}
+float* GScr_GetStartOrigin(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x190, entref);}
+float* GScr_GetTagAngles(script_string_s p0){PushValue(p0);return callScriptFunction<float*>(0x806e, entref);}
+float* GScr_GetTagOrigin(script_string_s p0){PushValue(p0);return callScriptFunction<float*>(0x806d, entref);}
+void GScr_GetTurretTarget(int p0){PushValue(p0);callScriptFunction<void>(0x8053, entref);}
+void GScr_GlassRadiusDamage(float* p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x8e, entref);}
+void GScr_IncrementCounter(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x13d, entref);}
+int GScr_IsAI(entity p0){PushValue(p0);return callScriptFunction<int>(0x161, entref);}
+int GScr_IsAlive(entity p0){PushValue(p0);return callScriptFunction<int>(0xe6, entref);}
+void GScr_IsGlassDestroyed(int p0){PushValue(p0);callScriptFunction<void>(0xc8, entref);}
+int GScr_IsItemUnlocked(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x80ae, entref);}
+int GScr_IsPlayer(entity p0){PushValue(p0);return callScriptFunction<int>(0xf2, entref);}
+int GScr_IsPlayerNumber(int p0){PushValue(p0);return callScriptFunction<int>(0xf3, entref);}
+int GScr_IsPointInVolume(float* p0, entity p1){PushValue(p0);PushValue(p1);return callScriptFunction<int>(0x21a, entref);}
+int GScr_IsSentient(entity p0){PushValue(p0);return callScriptFunction<int>(0x163, entref);}
+int GScr_IsSpawner(entity p0){PushValue(p0);return callScriptFunction<int>(0xe7, entref);}
+int GScr_IsValidGameType(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x10f, entref);}
+int GScr_IsValidMissile(entity p0){PushValue(p0);return callScriptFunction<int>(0x13, entref);}
+void GScr_IsWeaponClipOnly(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x9f, entref);}
+void GScr_IsWeaponDetonationTimed(script_string_s p0){PushValue(p0);callScriptFunction<void>(0xa0, entref);}
+void GScr_KickPlayer(int p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x130, entref);}
+void GScr_LoadLuiFile(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x24e, entref);}
+float* GScr_LocalToWorldCoords(float* p0){PushValue(p0);return callScriptFunction<float*>(0x8079, entref);}
+void GScr_LogMatchDataDeath(int p0, int p1, entity p2, int p3, script_string_s p4, script_string_s p5, int p6, int p7){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);PushValue(p6);PushValue(p7);callScriptFunction<void>(0x83fc, entref);}
+int GScr_LogMatchDataLife(int p0, float* p1, int p2, int p3, script_string_s p4, script_string_s p5, script_string_s p6, script_string_s p7, script_string_s p8, script_string_s p9, script_string_s p10, script_string_s p11){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);PushValue(p6);PushValue(p7);PushValue(p8);PushValue(p9);PushValue(p10);PushValue(p11);return callScriptFunction<int>(0x83fb, entref);}
+void GScr_MakeVehicleNotCollideWithPlayers(int p0){PushValue(p0);callScriptFunction<void>(0x83c0, entref);}
+void GScr_MakeVehicleSolidCapsule(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8091, entref);}
+void GScr_MakeVehicleSolidSphere(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8093, entref);}
+void GScr_MapRestart(int p0){PushValue(p0);callScriptFunction<void>(0x107, entref);}
+void GScr_MissileSetTargetEnt(entity p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8084, entref);}
+void GScr_MissileSetTargetPos(float* p0){PushValue(p0);callScriptFunction<void>(0x8085, entref);}
+void GScr_NewClientHudElem(entity p0){PushValue(p0);callScriptFunction<void>(0xef, entref);}
+void GScr_Obituary(entity p0, entity p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0xff, entref);}
+void GScr_Objective_Player(int p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xd6, entref);}
+void GScr_Objective_PlayerEnemyTeam(int p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xd8, entref);}
+void GScr_Objective_PlayerMask_HideFrom(int p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xda, entref);}
+void GScr_Objective_PlayerMask_HideFromAll(int p0){PushValue(p0);callScriptFunction<void>(0xd9, entref);}
+void GScr_Objective_PlayerMask_ShowTo(int p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xdc, entref);}
+void GScr_Objective_PlayerMask_ShowToAll(int p0){PushValue(p0);callScriptFunction<void>(0xdb, entref);}
+void GScr_Objective_PlayerTeam(int p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xd7, entref);}
+void GScr_Objective_Team(int p0){PushValue(p0);callScriptFunction<void>(0xd5, entref);}
+void GScr_PlayCinematicForAll(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x259, entref);}
+float* GScr_PointOnSegmentNearestToPoint(float* p0, float* p1, float* p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x54, entref);}
+void GScr_PrecacheHeadIcon(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x104, entref);}
+void GScr_PrecacheLocationSelector(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x7b, entref);}
+void GScr_PrecacheMenu(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x79, entref);}
+void GScr_PrecacheMiniMapIcon(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x105, entref);}
+void GScr_PrecacheMpAnim(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x106, entref);}
+void GScr_PrecacheStatusIcon(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x103, entref);}
+void GScr_PrecacheTurret(script_string_s p0){PushValue(p0);callScriptFunction<void>(0xb, entref);}
+void GScr_PreloadCinematicForAll(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x25a, entref);}
+void GScr_RemoteControlTurret(entity p0){PushValue(p0);callScriptFunction<void>(0x8049, entref);}
+void GScr_RemoteControlTurretOff(entity p0){PushValue(p0);callScriptFunction<void>(0x804a, entref);}
+void GScr_RemoteControlVehicle(entity p0){PushValue(p0);callScriptFunction<void>(0x8095, entref);}
+void GScr_RemoteControlVehicleTarget(entity p0){PushValue(p0);callScriptFunction<void>(0x8098, entref);}
+void GScr_RideVehicle(entity p0, float p1, float p2, float p3, float p4, int p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0x8411, entref);}
+void GScr_SetAC130Ambience(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x13a, entref);}
+void GScr_SetAISightLineVisible(int p0){PushValue(p0);callScriptFunction<void>(0x8376, entref);}
+void GScr_SetAutoRotationDelay(float p0){PushValue(p0);callScriptFunction<void>(0x8062, entref);}
+void GScr_SetBottomArc(float p0){PushValue(p0);callScriptFunction<void>(0x8061, entref);}
+void GScr_SetClientMatchDataDef(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x129, entref);}
+void GScr_SetCommonPlayerDataReservedInt(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x841d, entref);}
+void GScr_SetConvergenceHeightPercent(float p0){PushValue(p0);callScriptFunction<void>(0x8058, entref);}
+void GScr_SetConvergenceTime(float p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8057, entref);}
+void GScr_SetCoopPlayerDataReservedInt(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8427, entref);}
+void GScr_SetCorpseFalling(int p0){PushValue(p0);callScriptFunction<void>(0x83b0, entref);}
+void GScr_SetCursorHint(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x803c, entref);}
+void GScr_SetDefaultDropPitch(float p0){PushValue(p0);callScriptFunction<void>(0x8063, entref);}
+void GScr_SetDepthOfField(float p0, float p1, float p2, float p3, float p4, float p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0x8073, entref);}
+void GScr_SetDvar(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x17, entref);}
+void GScr_SetDvarIfUninitialized(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x19, entref);}
+void GScr_SetDynamicDvar(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x18, entref);}
+void GScr_SetEMPJammed(int p0){PushValue(p0);callScriptFunction<void>(0x80ac, entref);}
+void GScr_SetGameEndTime(int p0){PushValue(p0);callScriptFunction<void>(0x133, entref);}
+void GScr_SetHintString(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x803d, entref);}
+void GScr_SetLeftArc(float p0){PushValue(p0);callScriptFunction<void>(0x805f, entref);}
+void GScr_SetLightIntensity(float p0){PushValue(p0);callScriptFunction<void>(0x808a, entref);}
+void GScr_SetMapCenter(float* p0){PushValue(p0);callScriptFunction<void>(0x132, entref);}
+void GScr_SetMatchClientIP(entity p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x125, entref);}
+void GScr_SetMatchDataDef(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x124, entref);}
+void GScr_SetMiniMap(script_string_s p0, float p1, float p2, float p3, float p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0xb4, entref);}
+void GScr_SetMissileMinimapVisible(int p0){PushValue(p0);callScriptFunction<void>(0x8417, entref);}
+void GScr_SetNoJIPScore(int p0){PushValue(p0);callScriptFunction<void>(0x23a, entref);}
+void GScr_SetNoJIPTime(int p0){PushValue(p0);callScriptFunction<void>(0x23b, entref);}
+void GScr_SetNorthYaw(float p0){PushValue(p0);callScriptFunction<void>(0x39, entref);}
+void GScr_SetOmnvar(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x15, entref);}
+void GScr_SetOmnvar(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x15, entref);}
+void GScr_SetOmnvar(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x15, entref);}
+void GScr_SetOmnvar(script_string_s p0, float p1, script_string_s p1){PushValue(p0);PushValue(p1);PushValue(p1);callScriptFunction<void>(0x15, entref);}
+void GScr_SetOmnvar(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x15, entref);}
+void GScr_SetPlaneSplineId(entity p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83ec, entref);}
+void GScr_SetPlayerIgnoreRadiusDamage(int p0){PushValue(p0);callScriptFunction<void>(0x8d, entref);}
+void GScr_SetPlayerSpread(float p0){PushValue(p0);callScriptFunction<void>(0x8054, entref);}
+void GScr_SetPlayerTeamRank(entity p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x111, entref);}
+void GScr_SetRankedPlayerDataReservedInt(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8420, entref);}
+void GScr_SetRightArc(float p0){PushValue(p0);callScriptFunction<void>(0x805e, entref);}
+void GScr_SetSentryCarrier(entity p0){PushValue(p0);callScriptFunction<void>(0x804e, entref);}
+void GScr_SetSentryOwner(entity p0){PushValue(p0);callScriptFunction<void>(0x804d, entref);}
+void GScr_SetTargetEntity(entity p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8050, entref);}
+void GScr_SetTeamRadar(int p1){PushValue(p1);callScriptFunction<void>(0x113, entref);}
+void GScr_SetTeamRadarStrength(int p1){PushValue(p1);callScriptFunction<void>(0x115, entref);}
+void GScr_SetTeamScore(int p1){PushValue(p1);callScriptFunction<void>(0xf9, entref);}
+void GScr_SetThermalBodyMaterial(script_string_s p0){PushValue(p0);callScriptFunction<void>(0xb5, entref);}
+void GScr_SetTopArc(float p0){PushValue(p0);callScriptFunction<void>(0x8060, entref);}
+void GScr_SetTurretMinimapVisible(int p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x804f, entref);}
+void GScr_SetTurretModeChangeWait(int p0){PushValue(p0);callScriptFunction<void>(0x8067, entref);}
+void GScr_SetViewModelDepthOfField(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8074, entref);}
+void GScr_ShellShock(script_string_s p0, float p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x806f, entref);}
+void GScr_SnapToTargetEntity(entity p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8051, entref);}
+object GScr_SortByDistance(object p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<object>(0xb9, entref);}
+void GScr_Spawn(float* p1, int p2, int p3){PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x2d, entref);}
+void GScr_SpawnHelicopter(entity p0, float* p1, float* p2, script_string_s p3, script_string_s p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0xe5, entref);}
+void GScr_SpawnPlane(entity p0, float* p2, script_string_s p3, script_string_s p4, int p5){PushValue(p0);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0xe3, entref);}
+float GScr_SpawnSightTrace(float* p1, float* p2){PushValue(p1);PushValue(p2);return callScriptFunction<float>(0x13c, entref);}
+void GScr_SpawnTurret(float* p1, script_string_s p2, int p3){PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0xd, entref);}
+void GScr_StunPlayer(float p0){PushValue(p0);callScriptFunction<void>(0x8070, entref);}
+void GScr_TurretSetBarrelSpinEnabled(int p0){PushValue(p0);callScriptFunction<void>(0x83f1, entref);}
+float* GScr_VectorFromLineToPoint(float* p0, float* p1, float* p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x53, entref);}
+void GScr_ViewKick(int p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8078, entref);}
+conststring GScr_WeaponAltWeaponName(script_string_s p0){PushValue(p0);return callScriptFunction<conststring>(0x9e, entref);}
+int GScr_WeaponBurstCount(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x98, entref);}
+script_string_s GScr_WeaponClass(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x9a, entref);}
+int GScr_WeaponClipSize(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x93, entref);}
+float GScr_WeaponFireTime(script_string_s p0){PushValue(p0);return callScriptFunction<float>(0x92, entref);}
+int GScr_WeaponHasThermalScope(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0xa1, entref);}
+int GScr_WeaponInheritsPerks(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x97, entref);}
+script_string_s GScr_WeaponInventoryType(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x9b, entref);}
+int GScr_WeaponIsAuto(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x94, entref);}
+int GScr_WeaponIsBoltAction(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x96, entref);}
+int GScr_WeaponIsSemiAuto(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x95, entref);}
+int GScr_WeaponMaxAmmo(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x9d, entref);}
+int GScr_WeaponStartAmmo(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x9c, entref);}
+script_string_s GScr_WeaponType(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x99, entref);}
+float GScr_abs(float p0){PushValue(p0);return callScriptFunction<float>(0x47, entref);}
+float GScr_acos(float p0){PushValue(p0);return callScriptFunction<float>(0x43, entref);}
+float GScr_asin(float p0){PushValue(p0);return callScriptFunction<float>(0x42, entref);}
+float GScr_atan(float p0){PushValue(p0);return callScriptFunction<float>(0x44, entref);}
+float GScr_ceil(float p0){PushValue(p0);return callScriptFunction<float>(0x4b, entref);}
+float GScr_clamp(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float>(0x50, entref);}
+float GScr_cos(float p0){PushValue(p0);return callScriptFunction<float>(0x40, entref);}
+float GScr_exp(float p0){PushValue(p0);return callScriptFunction<float>(0x4c, entref);}
+float GScr_floor(float p0){PushValue(p0);return callScriptFunction<float>(0x4a, entref);}
+float GScr_log(float p0){PushValue(p0);return callScriptFunction<float>(0x4d, entref);}
+float GScr_max(float p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x49, entref);}
+float GScr_min(float p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x48, entref);}
+void GScr_notifyOnPlayerCommand(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8150, entref);}
+int GScr_positionWouldTelefrag(float* p0){PushValue(p0);return callScriptFunction<int>(0x100, entref);}
+float GScr_pow(float p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x1de, entref);}
+float GScr_sin(float p0){PushValue(p0);return callScriptFunction<float>(0x3f, entref);}
+float GScr_sqrt(float p0){PushValue(p0);return callScriptFunction<float>(0x4e, entref);}
+float GScr_squared(float p0){PushValue(p0);return callScriptFunction<float>(0x4f, entref);}
+float GScr_tan(float p0){PushValue(p0);return callScriptFunction<float>(0x41, entref);}
+void HECmd_ChangeFontScaleOverTime(float p0){PushValue(p0);callScriptFunction<void>(0x82c5, entref);}
+void HECmd_FadeOverTime(float p0){PushValue(p0);callScriptFunction<void>(0x82be, entref);}
+void HECmd_LinkWaypointToTargetWithOffset(entity p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83b8, entref);}
+void HECmd_MoveOverTime(float p0){PushValue(p0);callScriptFunction<void>(0x82c0, entref);}
+void HECmd_ScaleOverTime(float p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x82bf, entref);}
+void HECmd_SetClock(float p0, float p1, script_string_s p2, int p3, int p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x82b7, entref);}
+void HECmd_SetMaterial(script_string_s p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x82ae, entref);}
+void HECmd_SetPlayerNameString(entity p0){PushValue(p0);callScriptFunction<void>(0x82c4, entref);}
+void HECmd_SetPulseFX(int p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x82c3, entref);}
+void HECmd_SetTargetEnt(entity p0){PushValue(p0);callScriptFunction<void>(0x82af, entref);}
+void HECmd_SetTenthsTimerStatic(float p0){PushValue(p0);callScriptFunction<void>(0x82b6, entref);}
+void HECmd_SetTenthsTimerUp(float p0){PushValue(p0);callScriptFunction<void>(0x82b5, entref);}
+void HECmd_SetText(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x82ac, entref);}
+void HECmd_SetTimer(float p0){PushValue(p0);callScriptFunction<void>(0x82b1, entref);}
+void HECmd_SetValue(float p0){PushValue(p0);callScriptFunction<void>(0x82b9, entref);}
+void HECmd_SetWaypoint(int p0, int p1, int p2, int p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x82ba, entref);}
+void PlayerCmd_AllowADS(int p0){PushValue(p0);callScriptFunction<void>(0x8136, entref);}
+void PlayerCmd_AllowJump(int p0){PushValue(p0);callScriptFunction<void>(0x8137, entref);}
+void PlayerCmd_AllowSpectateTeam(int p1){PushValue(p1);callScriptFunction<void>(0x80cb, entref);}
+void PlayerCmd_AllowSprint(int p0){PushValue(p0);callScriptFunction<void>(0x8138, entref);}
+int PlayerCmd_AnyAmmoForWeaponModes(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x8130, entref);}
+void PlayerCmd_BeginLocationSelection(script_string_s p0, int p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8111, entref);}
+void PlayerCmd_BotCanSeeEntity(entity p0){PushValue(p0);callScriptFunction<void>(0x8360, entref);}
+void PlayerCmd_BotClearButton(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8370, entref);}
+script_string_s PlayerCmd_BotFirstAvailableGrenade(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x83d0, entref);}
+float PlayerCmd_BotGetDifficultySetting(script_string_s p0){PushValue(p0);return callScriptFunction<float>(0x836c, entref);}
+void PlayerCmd_BotGetImperfectEnemyInfo(entity p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8368, entref);}
+float* PlayerCmd_BotGetWorldClosestEdge(float* p0){PushValue(p0);return callScriptFunction<float*>(0x835d, entref);}
+void PlayerCmd_BotLookAtPoint(float* p0, float p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x835e, entref);}
+void PlayerCmd_BotMemoryEvent(script_string_s p0, script_string_s p1, float* p2, float* p3, entity p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x8353, entref);}
+array PlayerCmd_BotNodePickMultiple(int p2){PushValue(p2);return callScriptFunction<array>(0x8362, entref);}
+float* PlayerCmd_BotPredictEnemyCampSpots(int p0){PushValue(p0);return callScriptFunction<float*>(0x8404, entref);}
+float* PlayerCmd_BotPredictSeePoint(float* p0){PushValue(p0);return callScriptFunction<float*>(0x835f, entref);}
+void PlayerCmd_BotPressButton(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x836f, entref);}
+void PlayerCmd_BotSetAttacker(entity p0){PushValue(p0);callScriptFunction<void>(0x834a, entref);}
+void PlayerCmd_BotSetAwareness(float p0){PushValue(p0);callScriptFunction<void>(0x8365, entref);}
+void PlayerCmd_BotSetDifficulty(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x835b, entref);}
+void PlayerCmd_BotSetDifficultySetting(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x836b, entref);}
+void PlayerCmd_BotSetFlag(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8342, entref);}
+void PlayerCmd_BotSetPathingStyle(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x836a, entref);}
+void PlayerCmd_BotSetPersonality(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x835a, entref);}
+void PlayerCmd_BotSetScriptEnemy(entity p0){PushValue(p0);callScriptFunction<void>(0x8348, entref);}
+void PlayerCmd_BotSetScriptGoal(float p1, float p3, float p4){PushValue(p1);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x8345, entref);}
+void PlayerCmd_BotSetScriptGoal(float* p0, float p1, float p3, float p4){PushValue(p0);PushValue(p1);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x8345, entref);}
+void PlayerCmd_BotSetScriptGoal(script_string_s p0, float p1, float p3, float p4){PushValue(p0);PushValue(p1);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x8345, entref);}
+void PlayerCmd_BotSetScriptGoalNode(script_string_s p1, float p2, float p3){PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x8346, entref);}
+void PlayerCmd_BotSetScriptMove(float p0, float p1, float p2, int p3, int p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x8344, entref);}
+void PlayerCmd_BotThrowGrenade(float* p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8358, entref);}
+float* PlayerCmd_CanPlayerPlaceSentry(int p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x8145, entref);}
+float* PlayerCmd_CanPlayerPlaceTank(float p0, float p1, float p2, float p3, float p4, float p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);return callScriptFunction<float*>(0x8146, entref);}
+float PlayerCmd_ClientSpawnSightTracePassed(int p0){PushValue(p0);return callScriptFunction<float>(0x8135, entref);}
+entity PlayerCmd_ClonePlayer(int p0){PushValue(p0);return callScriptFunction<entity>(0x80c9, entref);}
+int PlayerCmd_CloseMenu(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x811d, entref);}
+void PlayerCmd_DeactivateChannelVolumes(float p1){PushValue(p1);callScriptFunction<void>(0x8129, entref);}
+entity PlayerCmd_DropScavengerBag(script_string_s p0){PushValue(p0);return callScriptFunction<entity>(0x80c1, entref);}
+void PlayerCmd_FreezeControls(int p0){PushValue(p0);callScriptFunction<void>(0x811f, entref);}
+int PlayerCmd_GetHybridScopeState(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x840d, entref);}
+int PlayerCmd_GetWeaponAmmoClip(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x812e, entref);}
+int PlayerCmd_GetWeaponAmmoStock(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x812f, entref);}
+void PlayerCmd_HasLoadedCustomizationPlayerView(entity p0){PushValue(p0);callScriptFunction<void>(0x83f2, entref);}
+void PlayerCmd_HasPerk(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x815f, entref);}
+void PlayerCmd_KC_RegWeaponForFXRemoval(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x80dc, entref);}
+void PlayerCmd_LoadCustomizationPlayerView(entity p0){PushValue(p0);callScriptFunction<void>(0x83e9, entref);}
+void PlayerCmd_MarkForEyesOn(int p0){PushValue(p0);callScriptFunction<void>(0x80e4, entref);}
+int PlayerCmd_OpenMenu(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x811c, entref);}
+int PlayerCmd_OpenPopupMenu(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x8119, entref);}
+int PlayerCmd_OpenPopupMenuNoMouse(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x811a, entref);}
+void PlayerCmd_PlayFX(int p0, float* p1, float* p2, float* p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x8154, entref);}
+void PlayerCmd_PlayerRecoilScaleOn(int p0){PushValue(p0);callScriptFunction<void>(0x8155, entref);}
+void PlayerCmd_PredictStreamPos(float* p0){PushValue(p0);callScriptFunction<void>(0x80d4, entref);}
+void PlayerCmd_RegisterParty(int p0){PushValue(p0);callScriptFunction<void>(0x8162, entref);}
+void PlayerCmd_SetActionSlot(int p0, script_string_s p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x813c, entref);}
+void PlayerCmd_SetAimSpreadMovementScale(float p0){PushValue(p0);callScriptFunction<void>(0x813b, entref);}
+void PlayerCmd_SetCardDisplaySlot(entity p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x80db, entref);}
+void PlayerCmd_SetChannelVolume(script_string_s p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8127, entref);}
+void PlayerCmd_SetChannelVolumes(script_string_s p1, float p2){PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8128, entref);}
+void PlayerCmd_SetClientDvar(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8132, entref);}
+void PlayerCmd_SetClientDvars(script_string_s p-1){PushValue(p-1);callScriptFunction<void>(0x8133, entref);}
+void PlayerCmd_SetClientOmnvar(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8131, entref);}
+void PlayerCmd_SetClientOmnvar(script_string_s p0, float p1, script_string_s p1){PushValue(p0);PushValue(p1);PushValue(p1);callScriptFunction<void>(0x8131, entref);}
+void PlayerCmd_SetClientOmnvar(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8131, entref);}
+void PlayerCmd_SetClientOmnvar(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8131, entref);}
+void PlayerCmd_SetClientOmnvar(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8131, entref);}
+void PlayerCmd_SetHybridScopeState(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x840e, entref);}
+void PlayerCmd_SetMLGCameraDefaults(int p0, float* p1, float* p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x83fe, entref);}
+void PlayerCmd_SetMLGSpectator(int p0){PushValue(p0);callScriptFunction<void>(0x8423, entref);}
+void PlayerCmd_SetNameplateMaterial(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83bb, entref);}
+void PlayerCmd_SetPerk(script_string_s p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x815e, entref);}
+void PlayerCmd_SetRank(int p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x80d7, entref);}
+void PlayerCmd_SetSpectateDefaults(float* p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x80de, entref);}
+void PlayerCmd_SetSpreadOverride(int p0){PushValue(p0);callScriptFunction<void>(0x8139, entref);}
+void PlayerCmd_SetVelocity(float* p0){PushValue(p0);callScriptFunction<void>(0x80ec, entref);}
+void PlayerCmd_SetViewKickScale(float p0){PushValue(p0);callScriptFunction<void>(0x813d, entref);}
+void PlayerCmd_SetViewmodel(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x810c, entref);}
+void PlayerCmd_SetVolMod(script_string_s p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8126, entref);}
+void PlayerCmd_SetWeaponAmmoClip(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x812c, entref);}
+void PlayerCmd_SetWeaponAmmoStock(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x812d, entref);}
+void PlayerCmd_SetWhizbyRadii(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8123, entref);}
+void PlayerCmd_SetWhizbySpreads(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8122, entref);}
+void PlayerCmd_ShowHudSplash(script_string_s p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x815d, entref);}
+void PlayerCmd_UnsetPerk(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8161, entref);}
+void PlayerCmd_WeaponLockFinalize(entity p0, float* p0, float* p1, int p2){PushValue(p0);PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8158, entref);}
+void PlayerCmd_WeaponLockFinalize(entity p0, float* p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8158, entref);}
+void PlayerCmd_WeaponLockFinalize(float* p0, float* p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8158, entref);}
+void PlayerCmd_WeaponLockFinalize(float* p1, int p2){PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8158, entref);}
+void PlayerCmd_WeaponLockNoClearance(int p0){PushValue(p0);callScriptFunction<void>(0x815b, entref);}
+void PlayerCmd_WeaponLockStart(){callScriptFunction<void>(0x8157, entref);}
+void PlayerCmd_WeaponLockStart(entity p0){PushValue(p0);callScriptFunction<void>(0x8157, entref);}
+void PlayerCmd_WeaponLockStart(float* p0){PushValue(p0);callScriptFunction<void>(0x8157, entref);}
+void PlayerCmd_WeaponLockTargetTooClose(int p0){PushValue(p0);callScriptFunction<void>(0x815a, entref);}
+entity PlayerCmd_dropItem(script_string_s p0){PushValue(p0);return callScriptFunction<entity>(0x80c0, entref);}
+int PlayerCmd_finishPlayerDamage(entity p0, entity p1, int p2, int p3, script_string_s p5, float* p6, float* p7, int p9, float p10){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p5);PushValue(p6);PushValue(p7);PushValue(p9);PushValue(p10);return callScriptFunction<int>(0x80c2, entref);}
+float PlayerCmd_getFractionMaxAmmo(script_string_s p0){PushValue(p0);return callScriptFunction<float>(0x80fd, entref);}
+float PlayerCmd_getFractionStartAmmo(script_string_s p0){PushValue(p0);return callScriptFunction<float>(0x80fc, entref);}
+void PlayerCmd_giveMaxAmmo(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x80fb, entref);}
+void PlayerCmd_giveStartAmmo(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x80fa, entref);}
+void PlayerCmd_giveWeapon(script_string_s p0, int p1, int p2, int p3, int p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x80f0, entref);}
+void PlayerCmd_hasWeapon(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x80f6, entref);}
+void PlayerCmd_setAngles(float* p0){PushValue(p0);callScriptFunction<void>(0x8103, entref);}
+void PlayerCmd_setEnterTime(int p0){PushValue(p0);callScriptFunction<void>(0x80c8, entref);}
+void PlayerCmd_setOrigin(){callScriptFunction<void>(0x8101, entref);}
+void PlayerCmd_setOrigin(float* p1){PushValue(p1);callScriptFunction<void>(0x8101, entref);}
+void PlayerCmd_setOrigin(int p1){PushValue(p1);callScriptFunction<void>(0x8101, entref);}
+void PlayerCmd_setSpawnWeapon(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x80bf, entref);}
+void PlayerCmd_setWeaponModelVariant(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8410, entref);}
+void PlayerCmd_spawn(float* p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x80c7, entref);}
+void PlayerCmd_switchToOffhand(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x80f9, entref);}
+void PlayerCmd_takeWeapon(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x80f1, entref);}
+void ScrAgentCmd_BeginMelee(entity p0){PushValue(p0);callScriptFunction<void>(0x838e, entref);}
+void ScrAgentCmd_DoAnimLerp(float* p0, float* p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8391, entref);}
+void ScrAgentCmd_DoAnimRelative(float* p1, float* p2){PushValue(p1);PushValue(p2);callScriptFunction<void>(0x83f5, entref);}
+float ScrAgentCmd_DoTrajectory(float* p0, float* p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float>(0x8390, entref);}
+void ScrAgentCmd_SetAnimScale(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8387, entref);}
+void ScrAgentCmd_SetGoalEntity(entity p0){PushValue(p0);callScriptFunction<void>(0x8385, entref);}
+void ScrAgentCmd_SetGoalPos(float* p0){PushValue(p0);callScriptFunction<void>(0x8382, entref);}
+void ScrAgentCmd_SetGoalRadius(float p0){PushValue(p0);callScriptFunction<void>(0x8386, entref);}
+void ScrAgentCmd_SetMaxTurnSpeed(float p0){PushValue(p0);callScriptFunction<void>(0x838c, entref);}
+void ScrAgentCmd_SetOrientMode(float* p1, float* p2){PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8388, entref);}
+void ScrAgentCmd_SetScripted(int p0){PushValue(p0);callScriptFunction<void>(0x838f, entref);}
+void ScrAgentCmd_SetViewHeight(int p0){PushValue(p0);callScriptFunction<void>(0x8392, entref);}
+void ScrAgentCmd_SetWallRunCost(float p0){PushValue(p0);callScriptFunction<void>(0x8429, entref);}
+void ScrAgentCmd_SetWaypoint(float* p0){PushValue(p0);callScriptFunction<void>(0x8381, entref);}
+void ScrCmd_AutoboltMissileEffects(int p0){PushValue(p0);callScriptFunction<void>(0x8414, entref);}
+void ScrCmd_DisablePlayerUse(entity p0){PushValue(p0);callScriptFunction<void>(0x832b, entref);}
+void ScrCmd_DoDamage(float p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x82e6, entref);}
+void ScrCmd_EnablePlayerUse(entity p0){PushValue(p0);callScriptFunction<void>(0x3d03, entref);}
+void ScrCmd_ForceUseHintOn(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x803e, entref);}
+void ScrCmd_GetAttachIgnoreCollision(int p0){PushValue(p0);callScriptFunction<void>(0x8009, entref);}
+conststring ScrCmd_GetAttachModelName(int p0){PushValue(p0);return callScriptFunction<conststring>(0x8007, entref);}
+conststring ScrCmd_GetAttachTagName(int p0){PushValue(p0);return callScriptFunction<conststring>(0x8008, entref);}
+array ScrCmd_GetIsTouchingEntities(object p0){PushValue(p0);return callScriptFunction<array>(0x8025, entref);}
+void ScrCmd_GetLinkedChildren(int p0){PushValue(p0);callScriptFunction<void>(0x8403, entref);}
+float* ScrCmd_GetPointInBounds(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x80a5, entref);}
+void ScrCmd_HudOutlineDisableForClient(entity p0){PushValue(p0);callScriptFunction<void>(0x83ee, entref);}
+void ScrCmd_HudOutlineEnable(int p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83c7, entref);}
+void ScrCmd_HudOutlineEnableForClient(entity p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x83ed, entref);}
+void ScrCmd_HudOutlineEnableForClients(int p1, int p2){PushValue(p1);PushValue(p2);callScriptFunction<void>(0x83ef, entref);}
+int ScrCmd_IsTouching(entity p0){PushValue(p0);return callScriptFunction<int>(0x8024, entref);}
+void ScrCmd_ItemWeaponSetAmmo(int p0, int p1, int p2, int p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x806b, entref);}
+void ScrCmd_LerpViewAngleClamp(float p0, float p1, float p2, float p3, float p4, float p5, float p6){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);PushValue(p6);callScriptFunction<void>(0x801d, entref);}
+void ScrCmd_LinkTo(entity p0, script_string_s p1, float* p2, float* p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x800f, entref);}
+void ScrCmd_MakeCollideWithItemClip(int p0){PushValue(p0);callScriptFunction<void>(0x841a, entref);}
+void ScrCmd_MakeScrambler(entity p0){PushValue(p0);callScriptFunction<void>(0x832c, entref);}
+void ScrCmd_PlayLocalSound(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x812a, entref);}
+void ScrCmd_PlayLoopSound(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x2703, entref);}
+void ScrCmd_PlayRumbleOnEntity(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8028, entref);}
+void ScrCmd_PlaySoundAsMaster(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x82d4, entref);}
+void ScrCmd_PlaySoundAtPos(float* p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xed, entref);}
+void ScrCmd_PlaySoundOnMovingEnt(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8405, entref);}
+void ScrCmd_PlaySoundToPlayer(script_string_s p0, entity p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8327, entref);}
+void ScrCmd_PlaySoundToTeam(script_string_s p0, entity p2){PushValue(p0);PushValue(p2);callScriptFunction<void>(0x8326, entref);}
+void ScrCmd_PlayerCommandBot(entity p0){PushValue(p0);callScriptFunction<void>(0x8375, entref);}
+int ScrCmd_PlayerForceDeathAnim(entity p0, script_string_s p2, float* p4){PushValue(p0);PushValue(p2);PushValue(p4);return callScriptFunction<int>(0x833a, entref);}
+void ScrCmd_PlayerLinkTo(entity p0, script_string_s p1, float p2, float p3, float p4, float p5, float p6, int p7){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);PushValue(p6);PushValue(p7);callScriptFunction<void>(0x8014, entref);}
+void ScrCmd_PlayerLinkToAbsolute(entity p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8017, entref);}
+void ScrCmd_PlayerLinkToBlend(entity p0, script_string_s p1, float p2, float p3, float p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x8018, entref);}
+void ScrCmd_PlayerLinkedSetUseBaseAngleForViewClamp(int p0){PushValue(p0);callScriptFunction<void>(0x801c, entref);}
+void ScrCmd_PlayerLinkedSetViewZnear(int p0){PushValue(p0);callScriptFunction<void>(0x801b, entref);}
+void ScrCmd_PlayerSetGroundReferenceEnt(entity p0){PushValue(p0);callScriptFunction<void>(0x82cb, entref);}
+void ScrCmd_PrecacheSound(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x207, entref);}
+void ScrCmd_QueueDialog(script_string_s p0, script_string_s p1, float p3, float* p7){PushValue(p0);PushValue(p1);PushValue(p3);PushValue(p7);callScriptFunction<void>(0x243, entref);}
+void ScrCmd_QueueDialogForPlayer(script_string_s p0, float p2, int p4, float* p5){PushValue(p0);PushValue(p2);PushValue(p4);PushValue(p5);callScriptFunction<void>(0x83fd, entref);}
+void ScrCmd_SetClientOwner(entity p0){PushValue(p0);callScriptFunction<void>(0x8373, entref);}
+void ScrCmd_SetClothType(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x83a8, entref);}
+int ScrCmd_SetContents(int p0){PushValue(p0);return callScriptFunction<int>(0x8039, entref);}
+void ScrCmd_SetEntityOwner(entity p0){PushValue(p0);callScriptFunction<void>(0x8377, entref);}
+void ScrCmd_SetEyesOnUplinkEnabled(int p0){PushValue(p0);callScriptFunction<void>(0x8038, entref);}
+void ScrCmd_SetGrenadeCookScale(float p0){PushValue(p0);callScriptFunction<void>(0x83eb, entref);}
+void ScrCmd_SetGrenadeThrowScale(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83ea, entref);}
+void ScrCmd_SetModel(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x802c, entref);}
+void ScrCmd_SetMoveSpeedScale(float p0){PushValue(p0);callScriptFunction<void>(0x808c, entref);}
+void ScrCmd_SetNormalHealth(float p0){PushValue(p0);callScriptFunction<void>(0x82e5, entref);}
+void ScrCmd_SetOtherEnt(entity p0){PushValue(p0);callScriptFunction<void>(0x8374, entref);}
+void ScrCmd_SetScriptMoverKillCam(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x833e, entref);}
+void ScrCmd_SetScriptableDamageOwner(entity p0){PushValue(p0);callScriptFunction<void>(0x8408, entref);}
+void ScrCmd_SetScriptablePartState(int p2){PushValue(p2);callScriptFunction<void>(0x83c3, entref);}
+void ScrCmd_SetSlowMotion(float p1, float p2, float p1000){PushValue(p1);PushValue(p2);PushValue(p1000);callScriptFunction<void>(0x3a, entref);}
+void ScrCmd_SetSurfaceType(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x83b1, entref);}
+void ScrCmd_ShowToPlayer(entity p0){PushValue(p0);callScriptFunction<void>(0x8329, entref);}
+void ScrCmd_SoundExists(script_string_s p0){PushValue(p0);callScriptFunction<void>(0xad, entref);}
+void ScrCmd_StopLocalSound(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x812b, entref);}
+void ScrCmd_StopRumble(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x802a, entref);}
+void ScrCmd_ThermalVisionOn(int p0){PushValue(p0);callScriptFunction<void>(0x8031, entref);}
+void ScrCmd_TrackerUpdate(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x80ba, entref);}
+void ScrCmd_TransferMarksToNewScriptModel(entity p0){PushValue(p0);callScriptFunction<void>(0x80a6, entref);}
+void ScrCmd_TriggerPortableRadarPing(float* p0, entity p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x248, entref);}
+void ScrCmd_UseBy(entity p0){PushValue(p0);callScriptFunction<void>(0x82d3, entref);}
+void ScrCmd_WorldPointInReticle_Circle(float* p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x80a3, entref);}
+void ScrCmd_WorldPointInReticle_Rect(float* p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x80a4, entref);}
+float* ScrCmd_WorldPointToScreenPos(float* p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x83cd, entref);}
+void ScrCmd_hidepart(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x800a, entref);}
+void ScrCmd_hidepartAllInstances(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x800b, entref);}
+void ScrCmd_moveShieldModel(script_string_s p0, script_string_s p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x8004, entref);}
+void ScrCmd_showpart(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x800d, entref);}
+float* Scr_AIPhysicsTrace(float* p0, float* p1, float p2, float p3, int p4, int p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);return callScriptFunction<float*>(0x83b2, entref);}
+void Scr_AIPhysicsTracePassed(float* p0, float* p1, float p2, float p3, int p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x83b3, entref);}
+void Scr_ActivateClientExploder(int p0, object p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x212, entref);}
+void Scr_AmbientStop(float p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x73, entref);}
+float Scr_AnglesDelta(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x67, entref);}
+float* Scr_AnglesToAxis(float* p0){PushValue(p0);return callScriptFunction<float*>(0x225, entref);}
+float* Scr_AnglesToForward(float* p0){PushValue(p0);return callScriptFunction<float*>(0x66, entref);}
+float* Scr_AnglesToRight(float* p0){PushValue(p0);return callScriptFunction<float*>(0x65, entref);}
+float* Scr_AnglesToUp(float* p0){PushValue(p0);return callScriptFunction<float*>(0x64, entref);}
+float* Scr_AxisToAngles(float* p0, float* p1, float* p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x63, entref);}
+void Scr_BadPlace_Arc(script_string_s p0, float p1, float* p2, float p3, float p4, float* p5, float p6, float p7){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);PushValue(p6);PushValue(p7);callScriptFunction<void>(0x1c9, entref);}
+void Scr_BadPlace_Brush(script_string_s p0, float p1, entity p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x1ca, entref);}
+void Scr_BadPlace_Cylinder(script_string_s p0, float p1, float* p2, float p3, float p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x1c8, entref);}
+void Scr_BadPlace_Delete(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x1c7, entref);}
+void Scr_BadPlace_Global(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x1fd, entref);}
+void Scr_BotFlagMemoryEvents(int p0, int p1, int p2, float* p3, float p4, script_string_s p5, int p6, entity p7){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);PushValue(p6);PushValue(p7);callScriptFunction<void>(0x1e5, entref);}
+float* Scr_BotGetClosestNavigablePoint(float* p0, float p1, entity p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x1ec, entref);}
+float* Scr_BotGetMemoryEvents(int p0, int p1, int p2, script_string_s p3, int p4, entity p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);return callScriptFunction<float*>(0x1df, entref);}
+script_string_s Scr_BotGetTeamDifficulty(int p0){PushValue(p0);return callScriptFunction<script_string_s>(0x24c, entref);}
+int Scr_BotGetTeamLimit(int p0){PushValue(p0);return callScriptFunction<int>(0x24a, entref);}
+int Scr_BotMemoryFlags(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x1e4, entref);}
+void Scr_BotSentientSwap(entity p0, entity p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x1e7, entref);}
+int Scr_BotZoneGetCount(int p0, script_string_s p2){PushValue(p0);PushValue(p2);return callScriptFunction<int>(0x1e1, entref);}
+float Scr_BotZoneGetIndoorPercent(int p0){PushValue(p0);return callScriptFunction<float>(0x1e6, entref);}
+int Scr_BotZoneNearestCount(int p0, int p2){PushValue(p0);PushValue(p2);return callScriptFunction<int>(0x1e3, entref);}
+int Scr_BotZoneNearestCount(int p0, int p2, script_string_s p3){PushValue(p0);PushValue(p2);PushValue(p3);return callScriptFunction<int>(0x1e3, entref);}
+int Scr_BotZoneNearestCount(int p0, int p2, int p3){PushValue(p0);PushValue(p2);PushValue(p3);return callScriptFunction<int>(0x1e3, entref);}
+void Scr_BotZoneSetTeam(int p0){PushValue(p0);callScriptFunction<void>(0x1e2, entref);}
+float Scr_BulletTrace(float* p0, float* p1, int p2, entity p3, int p4, int p5, int p6, int p7, int p8){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);PushValue(p6);PushValue(p7);PushValue(p8);return callScriptFunction<float>(0x30, entref);}
+void Scr_BulletTracePassed(float* p1, int p2, entity p3, float* p2047){PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p2047);callScriptFunction<void>(0x31, entref);}
+float* Scr_CalculateStartOrientation(float* p0, float* p1, float* p2, float* p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<float*>(0x22c, entref);}
+void Scr_ClearFog(float p0){PushValue(p0);callScriptFunction<void>(0x222, entref);}
+int Scr_Closer(float* p0, float* p1, float* p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<int>(0x5c, entref);}
+float* Scr_CombineAngles(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x68, entref);}
+float Scr_Distance(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x55, entref);}
+float Scr_Distance2D(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x56, entref);}
+float Scr_Distance2DSquared(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x210, entref);}
+float Scr_DistanceSquared(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x57, entref);}
+entitynum Scr_FindEntrances(float* p0){PushValue(p0);return callScriptFunction<entitynum>(0x1fc, entref);}
+entitynum Scr_GetClosestNodeInSight(float* p0){PushValue(p0);return callScriptFunction<entitynum>(0x15a, entref);}
+entitynum Scr_GetEnt(script_string_s p1){PushValue(p1);return callScriptFunction<entitynum>(0xe0, entref);}
+entitynum Scr_GetEntArray(script_string_s p1){PushValue(p1);return callScriptFunction<entitynum>(0xe1, entref);}
+void Scr_GetEntByNum(int p0){PushValue(p0);callScriptFunction<void>(0x21, entref);}
+float* Scr_GetGroundPosition(float* p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<float*>(0x35, entref);}
+entitynum Scr_GetNode(script_string_s p1){PushValue(p1);return callScriptFunction<entitynum>(0x155, entref);}
+entitynum Scr_GetNodeArray(script_string_s p1){PushValue(p1);return callScriptFunction<entitynum>(0x156, entref);}
+entitynum Scr_GetNodesInRadius(float* p0, float p1, float p2, float p3, script_string_s p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);return callScriptFunction<entitynum>(0x158, entref);}
+entitynum Scr_GetNodesInTrigger(entity p0){PushValue(p0);return callScriptFunction<entitynum>(0x1ed, entref);}
+entitynum Scr_GetNodesOnPath(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<entitynum>(0x1ef, entref);}
+float Scr_GetPathDist(float* p0, float* p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float>(0x1fe, entref);}
+float* Scr_GetPredictedEntityPosition(entity p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x23c, entref);}
+script_string_s Scr_GetSubStr(script_string_s p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<script_string_s>(0x6e, entref);}
+script_string_s Scr_GetWeaponAttachmentDisplayNames(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x26, entref);}
+script_string_s Scr_GetWeaponAttachments(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x25, entref);}
+script_string_s Scr_GetWeaponBaseName(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x24, entref);}
+script_string_s Scr_GetWeaponCamoName(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x27, entref);}
+script_string_s Scr_GetWeaponDisplayName(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x23, entref);}
+int Scr_GetWeaponExplosionRadius(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x1f8, entref);}
+conststring Scr_GetWeaponFlashTagname(script_string_s p0){PushValue(p0);return callScriptFunction<conststring>(0x2703, entref);}
+conststring Scr_GetWeaponHideTags(script_string_s p0){PushValue(p0);return callScriptFunction<conststring>(0x29, entref);}
+script_string_s Scr_GetWeaponModel(script_string_s p0, int p1){PushValue(p0);PushValue(p1);return callScriptFunction<script_string_s>(0x22, entref);}
+script_string_s Scr_GetWeaponReticleName(script_string_s p0){PushValue(p0);return callScriptFunction<script_string_s>(0x28, entref);}
+int Scr_GetZoneNearest(float* p0){PushValue(p0);return callScriptFunction<int>(0x1f1, entref);}
+entitynum Scr_GetZoneNodeForIndex(int p0){PushValue(p0);return callScriptFunction<entitynum>(0x1f7, entref);}
+entitynum Scr_GetZoneNodes(int p0, int p1){PushValue(p0);PushValue(p1);return callScriptFunction<entitynum>(0x1f2, entref);}
+entitynum Scr_GetZoneNodesByDist(int p0, float p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<entitynum>(0x1f6, entref);}
+float* Scr_GetZoneOrigin(int p0){PushValue(p0);return callScriptFunction<float*>(0x1f4, entref);}
+int Scr_GetZonePath(int p0, int p1){PushValue(p0);PushValue(p1);return callScriptFunction<int>(0x1f3, entref);}
+float* Scr_InvertAngles(float* p0){PushValue(p0);return callScriptFunction<float*>(0x22a, entref);}
+int Scr_IsAgent(entity p0){PushValue(p0);return callScriptFunction<int>(0x1e9, entref);}
+int Scr_IsBot(entity p0){PushValue(p0);return callScriptFunction<int>(0x1e8, entref);}
+void Scr_IsEndStr(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x6d, entref);}
+void Scr_IsSubStr(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x6c, entref);}
+void Scr_KillFXOnTag(int p0, entity p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x81, entref);}
+float Scr_Length(float* p0){PushValue(p0);return callScriptFunction<float>(0x58, entref);}
+float Scr_Length2D(float* p0){PushValue(p0);return callScriptFunction<float>(0x59, entref);}
+float Scr_Length2DSquared(float* p0){PushValue(p0);return callScriptFunction<float>(0x5b, entref);}
+float Scr_LengthSquared(float* p0){PushValue(p0);return callScriptFunction<float>(0x5a, entref);}
+int Scr_LoadFX(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x7d, entref);}
+int Scr_LookupSoundLength(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x220, entref);}
+void Scr_MagicBullet(script_string_s p0, float* p1, float* p2, entity p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0xc1, entref);}
+void Scr_MarkDangerousNodes(float* p0, float p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x1f9, entref);}
+void Scr_MarkDangerousNodesInTrigger(entity p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x1fa, entref);}
+int Scr_MissileCreateAttractorEnt(entity p0, float p1, float p2, entity p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<int>(0x2704, entref);}
+int Scr_MissileCreateAttractorOrigin(float* p0, float p1, float p2, entity p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<int>(0xe9, entref);}
+int Scr_MissileCreateRepulsorEnt(entity p0, float p1, float p2, entity p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<int>(0xea, entref);}
+int Scr_MissileCreateRepulsorOrigin(float* p0, float p1, float p2, entity p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<int>(0xeb, entref);}
+void Scr_MissileDeleteAttractor(int p0){PushValue(p0);callScriptFunction<void>(0xec, entref);}
+void Scr_NodesVisible(int p2){PushValue(p2);callScriptFunction<void>(0x1ee, entref);}
+void Scr_Objective_Add(int p0, float* p2){PushValue(p0);PushValue(p2);callScriptFunction<void>(0xcd, entref);}
+void Scr_Objective_Current(int p0){PushValue(p0);callScriptFunction<void>(0xd2, entref);}
+void Scr_Objective_Delete(int p0){PushValue(p0);callScriptFunction<void>(0xce, entref);}
+void Scr_Objective_Icon(int p0){PushValue(p0);callScriptFunction<void>(0xd0, entref);}
+void Scr_Objective_OnEntity(int p0, entity p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xd3, entref);}
+void Scr_Objective_OnEntityWithRotation(int p0, entity p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xd4, entref);}
+void Scr_Objective_Position(int p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0xd1, entref);}
+void Scr_Objective_State(int p0){PushValue(p0);callScriptFunction<void>(0xcf, entref);}
+void Scr_PhysicsExplosionCylinder(float* p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x87, entref);}
+void Scr_PhysicsExplosionSphere(float* p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x86, entref);}
+void Scr_PhysicsRadiusJitter(float* p0, float p1, float p2, float p3, float p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x89, entref);}
+void Scr_PhysicsRadiusJolt(float* p0, float p1, float p2, float* p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x88, entref);}
+float* Scr_PhysicsTrace(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x33, entref);}
+void Scr_PlayFX(int p0, float* p1, float* p2, float* p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x7e, entref);}
+void Scr_PlayFXOnTag(int p0, entity p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x7f, entref);}
+void Scr_PlayFXOnTagForClients(int p0, entity p1, script_string_s p2, entity p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x85, entref);}
+void Scr_PlayLoopedFX(int p0, float p1, float* p2, float p3, float* p4, float* p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0x82, entref);}
+float* Scr_PlayerPhysicsTrace(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x34, entref);}
+void Scr_PrecacheItem(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x76, entref);}
+void Scr_PrecacheLeaderboards(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x7c, entref);}
+void Scr_PrecacheMaterial(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x77, entref);}
+void Scr_PrecacheModel(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x74, entref);}
+void Scr_PrecacheRumble(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x7a, entref);}
+void Scr_PrecacheShellShock(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x75, entref);}
+void Scr_PrecacheString(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x78, entref);}
+float Scr_RandomFloat(float p0){PushValue(p0);return callScriptFunction<float>(0x3c, entref);}
+float Scr_RandomFloatRange(float p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x3e, entref);}
+int Scr_RandomInt(int p0){PushValue(p0);return callScriptFunction<int>(0x3b, entref);}
+int Scr_RandomIntRange(int p0, int p1){PushValue(p0);PushValue(p1);return callScriptFunction<int>(0x3d, entref);}
+float* Scr_RotatePointAroundVector(float* p0, float* p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x6b, entref);}
+float* Scr_RotateVector(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x6a, entref);}
+float* Scr_RotateVectorInverted(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x22b, entref);}
+void Scr_SetBlurForPlayer(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x814c, entref);}
+void Scr_SetLevelDopplerPreset(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x223, entref);}
+void Scr_SetSunLight(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x1ab, entref);}
+void Scr_SightTracePassed(float* p1, int p2, entity p3, entity p4, float* p2047){PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p2047);callScriptFunction<void>(0x32, entref);}
+void Scr_SpawnFX(int p0, float* p1, float* p2, float* p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x83, entref);}
+void Scr_SpawnFXForClient(int p0, float* p1, entity p2, float* p3, float* p4){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);callScriptFunction<void>(0x24b, entref);}
+void Scr_StopFXOnTag(int p0, entity p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x80, entref);}
+void Scr_TableExists(script_string_s p0){PushValue(p0);callScriptFunction<void>(0xbf, entref);}
+script_string_s Scr_TableLookup(script_string_s p0, int p1, script_string_s p2, int p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<script_string_s>(0xba, entref);}
+void Scr_TableLookupIString(script_string_s p0, int p1, script_string_s p2, int p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0xbc, entref);}
+script_string_s Scr_TableLookupIStringByRow(script_string_s p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<script_string_s>(0xbb, entref);}
+int Scr_TableLookupRowNum(script_string_s p0, int p1, script_string_s p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<int>(0xbe, entref);}
+float Scr_TrajectoryCalculateExitAngle(float p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<float>(0x215, entref);}
+float* Scr_TrajectoryCalculateInitialVelocity(float* p0, float* p1, float* p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<float*>(0x213, entref);}
+float Scr_TrajectoryCalculateMinimumVelocity(float* p0, float* p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float>(0x214, entref);}
+void Scr_TrajectoryCanAttemptAccurateJump(float* p0, float* p1, float* p2, float* p3, float p4, float p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0x218, entref);}
+float Scr_TrajectoryComputeDeltaHeightAtTime(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float>(0x217, entref);}
+float Scr_TrajectoryEstimateDesiredInAirTime(float* p0, float* p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<float>(0x216, entref);}
+float* Scr_TransformMove(float* p0, float* p1, float* p2, float* p3, float* p4, float* p5){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p5);return callScriptFunction<float*>(0x69, entref);}
+void Scr_TriggerFX(entity p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x84, entref);}
+float* Scr_VectorCross(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float*>(0x5e, entref);}
+float Scr_VectorDot(float* p0, float* p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x5d, entref);}
+float* Scr_VectorLerp(float* p0, float* p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<float*>(0x62, entref);}
+float* Scr_VectorNormalize(float* p0){PushValue(p0);return callScriptFunction<float*>(0x5f, entref);}
+float* Scr_VectorToAngles(float* p0){PushValue(p0);return callScriptFunction<float*>(0x60, entref);}
+float Scr_VectorToYaw(float* p0){PushValue(p0);return callScriptFunction<float>(0x61, entref);}
+void Scr_VisionSetMissilecam(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x136, entref);}
+void Scr_VisionSetNaked(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x134, entref);}
+void Scr_VisionSetNakedForPlayer(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8147, entref);}
+void Scr_VisionSetNight(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x135, entref);}
+void Scr_VisionSetPain(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x138, entref);}
+void Scr_VisionSetPostApply(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x255, entref);}
+void Scr_VisionSetStage(int p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83b7, entref);}
+void Scr_VisionSetThermal(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x137, entref);}
+void Scr_VisionSyncWithPlayer(entity p0){PushValue(p0);callScriptFunction<void>(0x815c, entref);}
+void ScriptEntCmd_AddPitch(float p0){PushValue(p0);callScriptFunction<void>(0x8171, entref);}
+void ScriptEntCmd_CloneBrushModelToScriptModel(entity p0){PushValue(p0);callScriptFunction<void>(0x817d, entref);}
+void ScriptEntCmd_GravityMove(float* p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x816a, entref);}
+void ScriptEntCmd_MoveSlide(float* p0, float p1, float* p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x816b, entref);}
+void ScriptEntCmd_MoveTo(float* p0){PushValue(p0);callScriptFunction<void>(0x8166, entref);}
+void ScriptEntCmd_MoveX(float p0){PushValue(p0);callScriptFunction<void>(0x8167, entref);}
+void ScriptEntCmd_PhysicsLaunchClient(float* p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x817a, entref);}
+void ScriptEntCmd_PhysicsLaunchServer(float* p0, float* p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x817b, entref);}
+void ScriptEntCmd_PhysicsLaunchServerItem(float* p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x817c, entref);}
+void ScriptEntCmd_PhysicsSetMaxAngVel(float p0){PushValue(p0);callScriptFunction<void>(0x83e0, entref);}
+void ScriptEntCmd_PhysicsSetMaxLinVel(float p0){PushValue(p0);callScriptFunction<void>(0x8168, entref);}
+void ScriptEntCmd_RotatePitch(float p0){PushValue(p0);callScriptFunction<void>(0x816e, entref);}
+void ScriptEntCmd_RotateVelocity(float* p0){PushValue(p0);callScriptFunction<void>(0x8175, entref);}
+void ScriptEntCmd_ScriptModelPlayAnimDeltaMotion(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8180, entref);}
+void ScriptEntCmd_SetCanDamage(int p0){PushValue(p0);callScriptFunction<void>(0x8178, entref);}
+void ScriptEntCmd_SetCanRadiusDamage(int p0){PushValue(p0);callScriptFunction<void>(0x8179, entref);}
+void ScriptEntCmd_Vibrate(float* p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x8174, entref);}
+float SentientCmd_GetClosestEnemySqDist(float* p0, float p1){PushValue(p0);PushValue(p1);return callScriptFunction<float>(0x8247, entref);}
+int SentientCmd_LastKnownPos(entity p0){PushValue(p0);return callScriptFunction<int>(0x81f5, entref);}
+int SentientCmd_LastKnownTime(entity p0){PushValue(p0);return callScriptFunction<int>(0x81f4, entref);}
+void SentientCmd_MakeEntitySentient(int p1){PushValue(p1);callScriptFunction<void>(0x824a, entref);}
+void SentientCmd_SetIgnoreFoliageSightingMe(int p0){PushValue(p0);callScriptFunction<void>(0x8421, entref);}
+void SentientCmd_SetThreatBias(int p2){PushValue(p2);callScriptFunction<void>(0x148, entref);}
+void SentientCmd_SetThreatBiasAgainstAll(int p1){PushValue(p1);callScriptFunction<void>(0x149, entref);}
+int VehCmd_CanTurretTargetPoint(float* p0, int p1, entity p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<int>(0x81ae, entref);}
+void VehCmd_DoSpawn(entity p1){PushValue(p1);callScriptFunction<void>(0x81b7, entref);}
+void VehCmd_FinishDamage(entity p0, entity p1, int p2, int p3, script_string_s p5, float* p6, float* p7, int p9, int p10){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p5);PushValue(p6);PushValue(p7);PushValue(p9);PushValue(p10);callScriptFunction<void>(0x8187, entref);}
+script_string_s VehCmd_FireWeapon(entity p1, float* p2, float p3){PushValue(p1);PushValue(p2);PushValue(p3);return callScriptFunction<script_string_s>(0x81b2, entref);}
+void VehCmd_HeliSetGoal(float* p0, float p1, float p2, float p3, int p4, float p6, float p7, int p8, int p9, int p10, int p11, int p12){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);PushValue(p4);PushValue(p6);PushValue(p7);PushValue(p8);PushValue(p9);PushValue(p10);PushValue(p11);PushValue(p12);callScriptFunction<void>(0x81aa, entref);}
+void VehCmd_JoltBody(float* p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x819e, entref);}
+void VehCmd_NearGoalNotifyDist(float p0){PushValue(p0);callScriptFunction<void>(0x81a4, entref);}
+void VehCmd_ResumeSpeed(float p0){PushValue(p0);callScriptFunction<void>(0x8196, entref);}
+void VehCmd_RotateYaw(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x818a, entref);}
+void VehCmd_SetAcceleration(float p0){PushValue(p0);callScriptFunction<void>(0x8194, entref);}
+void VehCmd_SetAirResitance(float p0){PushValue(p0);callScriptFunction<void>(0x819a, entref);}
+void VehCmd_SetDeceleration(float p0){PushValue(p0);callScriptFunction<void>(0x8195, entref);}
+void VehCmd_SetDroneGoalPos(entity p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x83c6, entref);}
+void VehCmd_SetGoalPos(float* p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x81a5, entref);}
+void VehCmd_SetGoalYaw(float p0){PushValue(p0);callScriptFunction<void>(0x81a6, entref);}
+void VehCmd_SetHoverParams(float p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x819d, entref);}
+void VehCmd_SetJitterParams(float* p0, float p1, float p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x819c, entref);}
+void VehCmd_SetLookAtEnt(entity p0){PushValue(p0);callScriptFunction<void>(0x81af, entref);}
+void VehCmd_SetMaxPitchRoll(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8199, entref);}
+void VehCmd_SetTargetYaw(float p0){PushValue(p0);callScriptFunction<void>(0x81a8, entref);}
+void VehCmd_SetTurningAbility(float p0){PushValue(p0);callScriptFunction<void>(0x819b, entref);}
+void VehCmd_SetTurretTargetEnt(entity p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x81ac, entref);}
+void VehCmd_SetTurretTargetVec(float* p0){PushValue(p0);callScriptFunction<void>(0x81ab, entref);}
+void VehCmd_SetWaitSpeed(float p0){PushValue(p0);callScriptFunction<void>(0x8186, entref);}
+void VehCmd_SetWeapon(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x81b1, entref);}
+void VehCmd_SetYawSpeed(float p0, float p1, float p2, float p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x8197, entref);}
+void VehCmd_SetYawSpeedByName(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x8198, entref);}
+void VehCmd_Teleport(float* p0, float* p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x8181, entref);}
+void VehCmd_VehicleDriveTo(float* p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x81b6, entref);}
+void VehCmd_VehicleTurretControlOff(entity p0){PushValue(p0);callScriptFunction<void>(0x81b4, entref);}
+void VehCmd_VehicleTurretControlOn(entity p0){PushValue(p0);callScriptFunction<void>(0x81b3, entref);}
+entitynum VehPathCmd_GetNode(script_string_s p1){PushValue(p1);return callScriptFunction<entitynum>(0xa2, entref);}
+entitynum VehPathCmd_GetNodeArray(script_string_s p1){PushValue(p1);return callScriptFunction<entitynum>(0xa3, entref);}
+void VehPhysCmd_Crash(int p0){PushValue(p0);callScriptFunction<void>(0x81b9, entref);}
+void VehPhysCmd_Launch(float* p0, float p1, float* p2){PushValue(p0);PushValue(p1);PushValue(p2);callScriptFunction<void>(0x81ba, entref);}
+void VehPhysCmd_SetConveyorBelt(float p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x81be, entref);}
+void VehPhysCmd_SetSpeed(float p0){PushValue(p0);callScriptFunction<void>(0x81bd, entref);}
+void VehicleScript_Precache(script_string_s p0){PushValue(p0);callScriptFunction<void>(0xa6, entref);}
+void VehicleScript_Spawn(script_string_s p0, float* p3, float* p4, entity p5){PushValue(p0);PushValue(p3);PushValue(p4);PushValue(p5);callScriptFunction<void>(0xa7, entref);}
+void assertexCmd(int p0){PushValue(p0);callScriptFunction<void>(0x7, entref);}
+void iclientprintln(script_string_s p-1){PushValue(p-1);callScriptFunction<void>(0x80c5, entref);}
+void iclientprintlnbold(script_string_s p-1){PushValue(p-1);callScriptFunction<void>(0x80c6, entref);}
+void iprintln(script_string_s p-1){PushValue(p-1);callScriptFunction<void>(0xdd, entref);}
+void iprintlnbold(script_string_s p-1){PushValue(p-1);callScriptFunction<void>(0xde, entref);}
+void sub_823DE558(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x829b, entref);}
+void sub_82405EA8(int p0){PushValue(p0);callScriptFunction<void>(0x10, entref);}
+void sub_82406640(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x1a, entref);}
+void sub_824067D8(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x1b, entref);}
+script_string_s sub_8240EB88(script_string_s p0, int p1, int p2){PushValue(p0);PushValue(p1);PushValue(p2);return callScriptFunction<script_string_s>(0xbd, entref);}
+int sub_8240FE50(script_string_s p0){PushValue(p0);return callScriptFunction<int>(0x809d, entref);}
+void sub_8240FFB0(script_string_s p0, script_string_s p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x809e, entref);}
+void sub_8240FFB0(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x809e, entref);}
+void sub_8240FFB0(script_string_s p0, int p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x809e, entref);}
+void sub_8240FFB0(script_string_s p0, float p1, script_string_s p1){PushValue(p0);PushValue(p1);PushValue(p1);callScriptFunction<void>(0x809e, entref);}
+void sub_8240FFB0(script_string_s p0, float p1){PushValue(p0);PushValue(p1);callScriptFunction<void>(0x809e, entref);}
+void sub_82416598(script_string_s p0, float p1, float p2, int p3){PushValue(p0);PushValue(p1);PushValue(p2);PushValue(p3);callScriptFunction<void>(0x658c, entref);}
+void sub_8241C408(script_string_s p0){PushValue(p0);callScriptFunction<void>(0x82de, entref);}
+int sub_8241E140(entity p0){PushValue(p0);return callScriptFunction<int>(0x11f, entref);}

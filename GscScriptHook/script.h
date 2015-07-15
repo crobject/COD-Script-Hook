@@ -1,12 +1,13 @@
 #include "types.h"
+#pragma once
 using namespace std;
+#define AW
 
 void PushValue(int val);
 void PushValue(float val);
 void PushValue(script_string_s val);
 void PushValue(float* val);
 void PushValue(short entNum);
-extern int paramCount;
 
 union VariableUnion
 {
@@ -66,6 +67,13 @@ typedef float* (*Scr_AllocVector_t)(float* v);
 typedef short (*SL_GetStringOfSize_t)(const char* value,unsigned int user, unsigned int len, int type);
 typedef const char* (*SL_ConvertToString_t)(short val);
 typedef int (*Scr_GetEntityId_t)(int entnum, unsigned int classnum);
+
+extern int paramCount;
+extern script_function_t* g_scr_func_table;
+extern script_method_t* g_scr_meth_table;
+extern int* cParam;
+extern VariableValue** stackTop;
+
 typedef struct gsc_notify
 {
 	gsc_notify()
@@ -126,6 +134,48 @@ static T callScriptFunction(short functionId, scr_entref_t entref)
 {
 	try
 	{
+		//set the param count to nessasary amount based on added params
+		*cParam = paramCount;
+		//check is the function is in the func_table
+		if(functionId & 0x8000)
+		{
+			//load function address from table
+			script_function_t gscFunction = g_scr_func_table[functionId - 0x8000];
+			//check if function exists
+			if(!gscFunction)
+				throw exception("Unable to find function");
+			//call function
+			gscFunction(entref);
+		}
+		else
+		{
+			//get function from method table
+			script_method_t gscFunction = g_scr_meth_table[functionId];
+			if(!gscFunction)
+				throw exception("Unable to find method");
+			gscFunction(entref);
+		}
+	}
+	catch(exception e)
+	{
+		printf("callScriptFunction error %s\n",e.what());
+		*cParam = 0;
+		return (T)(NULL);
+	}
+	//get the return argument and cast it to the templated type
+	T tmp =  *reinterpret_cast<T *>(&(*stackTop)->u);
+	// VM_Execute will clear out our params for us
+	//might be a good idea to clear them ourselves because there can be multiple function calls in one loop
+	*cParam = 0;
+	//reset the param counter 
+	paramCount = 0;
+	return tmp;
+}
+template <>
+static void callScriptFunction<void>(short functionId, scr_entref_t entref)
+{
+	try
+	{
 		*cParam = paramCount;
 		if(functionId & 0x8000)
 		{
@@ -146,11 +196,10 @@ static T callScriptFunction(short functionId, scr_entref_t entref)
 	{
 		printf("callScriptFunction error %s\n",e.what());
 		*cParam = 0;
-		return reinterpret_cast<T>(NULL);
 	}
-	T tmp =  *reinterpret_cast<T *>((*stackTop)->u.pointerValue);
 	*cParam = 0;
-	return tmp;
 }
 void spawnThread(gsc_thread_t thread);
-void initAW();
+
+void initGame(void (*start_function)());
+void initGameHooks();

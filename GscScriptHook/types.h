@@ -21,7 +21,9 @@ typedef struct script_string_s
 	}
 };
 typedef script_string_s conststring;
-typedef int Entity;
+typedef int entity;
 typedef float* vector;
 typedef short entitynum;
-typedef int Object;
+typedef int object;
+typedef int anim;
+typedef int hudelem;
